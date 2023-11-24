@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace CarRepairWorkshop.Contracts;
+namespace CarRepairWorkshop.Contracts.Models;
 
 public class Vehicle
 {
@@ -10,7 +10,6 @@ public class Vehicle
     public long Id { get; set; }
     
     public string? VIN { get; set; }
-    
     
     [Required]
     [RegularExpression(@"^[A-Z]{3}-\d{3}$")]

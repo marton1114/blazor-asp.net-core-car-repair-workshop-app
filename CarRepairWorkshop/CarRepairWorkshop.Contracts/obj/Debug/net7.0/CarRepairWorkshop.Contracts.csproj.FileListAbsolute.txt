@@ -1,0 +1,4 @@
+D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Contracts\obj\Debug\net7.0\CarRepairWorkshop.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Contracts\obj\Debug\net7.0\CarRepairWorkshop.Contracts.AssemblyInfoInputs.cache
+D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Contracts\obj\Debug\net7.0\CarRepairWorkshop.Contracts.AssemblyInfo.cs
+D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Contracts\obj\Debug\net7.0\CarRepairWorkshop.Contracts.csproj.CoreCompileInputs.cache
