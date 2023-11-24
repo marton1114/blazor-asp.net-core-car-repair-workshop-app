@@ -1,7 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using CarRepairWorkshop.Contracts.Validation;
 
-namespace CarRepairWorkshop.Contracts;
+namespace CarRepairWorkshop.Contracts.Models;
 
 public class VehicleModel
 {
@@ -16,5 +17,6 @@ public class VehicleModel
     public string? Make { get; set; }
     
     [Required]
+    [YearRange(Minimum = 1900)]
     public int Year { get; set; }
 }

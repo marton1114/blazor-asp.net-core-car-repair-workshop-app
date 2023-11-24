@@ -1,0 +1,18 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace CarRepairWorkshop.Contracts;
+
+public class Vehicle
+{
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public long Id { get; set; }
+    
+    public string? VIN { get; set; }
+    
+    
+    [Required]
+    [RegularExpression(@"^[A-Z]{3}-\d{3}$")]
+    public string? LicensePlate { get; set; }
+}
