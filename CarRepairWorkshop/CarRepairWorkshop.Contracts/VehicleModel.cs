@@ -3,20 +3,18 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CarRepairWorkshop.Contracts;
 
-public class Customer
+public class VehicleModel
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public long Id { get; set; }
     
     [Required]
-    public string? Address { get; set; }
+    public string? ModelName { get; set; }
     
     [Required]
-    [EmailAddress]
-    public string? EmailAddress { get; set; }
+    public string? Make { get; set; }
     
     [Required]
-    [Phone]
-    public string? PhoneNumber { get; set; }
+    public int Year { get; set; }
 }
