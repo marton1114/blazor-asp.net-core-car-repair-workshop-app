@@ -9,6 +9,7 @@ public class Vehicle
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public long Id { get; set; }
     
+    [Required]
     public string? VIN { get; set; }
     
     [Required]
