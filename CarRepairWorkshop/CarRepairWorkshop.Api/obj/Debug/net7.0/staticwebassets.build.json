@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ryDfJn6fNrog6if4yiEOGN2PfpyRHHaAq0bKZiZrvbo=",
+  "Source": "CarRepairWorkshop.Api",
+  "BasePath": "_content/CarRepairWorkshop.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

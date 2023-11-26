@@ -10,7 +10,7 @@ public class Job
     public long Id { get; set; }
     
     [Required]
-    public Customer? CustomerId { get; set; }
+    public Customer? Customer { get; set; }
     
     [Required]
     public Vehicle? Vehicle { get; set; }
