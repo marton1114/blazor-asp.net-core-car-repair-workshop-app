@@ -826,3 +826,11 @@ D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSha
 D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.UI\obj\Debug\net7.0\refint\CarRepairWorkshop.UI.dll
 D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.UI\obj\Debug\net7.0\CarRepairWorkshop.UI.pdb
 D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.UI\obj\Debug\net7.0\ref\CarRepairWorkshop.UI.dll
+D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.UI\bin\Debug\net7.0\wwwroot\_framework\CarRepairWorkshop.Contracts.dll
+D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.UI\bin\Debug\net7.0\wwwroot\_framework\CarRepairWorkshop.Contracts.pdb
+D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.UI\bin\Debug\net7.0\wwwroot\_framework\CarRepairWorkshop.Contracts.pdb.gz
+D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.UI\bin\Debug\net7.0\wwwroot\_framework\CarRepairWorkshop.Contracts.dll.gz
+D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.UI\bin\Debug\net7.0\CarRepairWorkshop.Contracts.dll
+D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.UI\bin\Debug\net7.0\CarRepairWorkshop.Contracts.pdb
+D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.UI\obj\Debug\net7.0\build-gz\U8OeA5rN.gz
+D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.UI\obj\Debug\net7.0\build-gz\j5tJMy8N.gz

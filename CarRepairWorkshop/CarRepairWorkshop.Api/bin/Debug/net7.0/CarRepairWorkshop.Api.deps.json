@@ -954,15 +954,6 @@
         }
       },
       "CarRepairWorkshop.Contracts/1.0.0": {
-        "dependencies": {
-          "Microsoft.AspNetCore.OpenApi": "7.0.10",
-          "Microsoft.EntityFrameworkCore.Proxies": "7.0.12",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.12",
-          "Serilog.AspNetCore": "7.0.0",
-          "Serilog.Sinks.Console": "4.1.0",
-          "Serilog.Sinks.File": "5.0.0",
-          "Swashbuckle.AspNetCore": "6.5.0"
-        },
         "runtime": {
           "CarRepairWorkshop.Contracts.dll": {}
         }

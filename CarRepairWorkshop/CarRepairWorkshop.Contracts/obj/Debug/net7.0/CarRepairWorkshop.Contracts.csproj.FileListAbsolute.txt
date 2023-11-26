@@ -3,12 +3,9 @@ D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSha
 D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Contracts\obj\Debug\net7.0\CarRepairWorkshop.Contracts.AssemblyInfo.cs
 D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Contracts\obj\Debug\net7.0\CarRepairWorkshop.Contracts.csproj.CoreCompileInputs.cache
 D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Contracts\bin\Debug\net7.0\CarRepairWorkshop.Contracts.deps.json
-D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Contracts\bin\Debug\net7.0\CarRepairWorkshop.Contracts.runtimeconfig.json
 D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Contracts\bin\Debug\net7.0\CarRepairWorkshop.Contracts.dll
 D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Contracts\bin\Debug\net7.0\CarRepairWorkshop.Contracts.pdb
-D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Contracts\obj\Debug\net7.0\CarRepairWorkshop.Contracts.csproj.AssemblyReference.cache
 D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Contracts\obj\Debug\net7.0\CarRepairWorkshop.Contracts.dll
 D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Contracts\obj\Debug\net7.0\refint\CarRepairWorkshop.Contracts.dll
 D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Contracts\obj\Debug\net7.0\CarRepairWorkshop.Contracts.pdb
-D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Contracts\obj\Debug\net7.0\CarRepairWorkshop.Contracts.genruntimeconfig.cache
 D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Contracts\obj\Debug\net7.0\ref\CarRepairWorkshop.Contracts.dll
