@@ -475,6 +475,16 @@
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
+      },
+      "CarRepairWorkshop.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/CarRepairWorkshop.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CarRepairWorkshop.Contracts.dll": {}
+        }
       }
     },
     "net7.0/browser-wasm": {
@@ -944,6 +954,16 @@
         },
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
+        }
+      },
+      "CarRepairWorkshop.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/CarRepairWorkshop.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CarRepairWorkshop.Contracts.dll": {}
         }
       }
     }
@@ -1792,10 +1812,16 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "CarRepairWorkshop.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../CarRepairWorkshop.Contracts/CarRepairWorkshop.Contracts.csproj",
+      "msbuildProject": "../CarRepairWorkshop.Contracts/CarRepairWorkshop.Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "CarRepairWorkshop.Contracts >= 1.0.0",
       "Microsoft.AspNetCore.Components.WebAssembly >= 7.0.11",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 7.0.11"
     ]
@@ -1824,7 +1850,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Personal\\Egyetem\\Felevek es vizsgak\\Kötelezően választott tárgyak\\NI_CSharp\\beadando\\CarRepairWorkshop\\CarRepairWorkshop.Contracts\\CarRepairWorkshop.Contracts.csproj": {
+              "projectPath": "D:\\Personal\\Egyetem\\Felevek es vizsgak\\Kötelezően választott tárgyak\\NI_CSharp\\beadando\\CarRepairWorkshop\\CarRepairWorkshop.Contracts\\CarRepairWorkshop.Contracts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
