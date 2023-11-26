@@ -51,3 +51,15 @@ CREATE INDEX "IX_Jobs_VehicleId" ON "Jobs" ("VehicleId");
 2023-11-26 16:18:24.014 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
 INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
 VALUES ('20231126151708_Initial', '7.0.12');
+2023-11-26 17:07:39.839 +01:00 [INF] Now listening on: http://localhost:5093
+2023-11-26 17:07:39.885 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-26 17:07:39.886 +01:00 [INF] Hosting environment: Development
+2023-11-26 17:07:39.887 +01:00 [INF] Content root path: D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Api
+2023-11-26 17:07:40.355 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - -
+2023-11-26 17:07:40.598 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - - - 200 - text/html;charset=utf-8 243.9007ms
+2023-11-26 17:07:40.785 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/favicon-32x32.png - -
+2023-11-26 17:07:40.806 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-11-26 17:07:40.809 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/favicon-32x32.png - - - 0 628 image/png 23.8881ms
+2023-11-26 17:07:40.855 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - -
+2023-11-26 17:07:41.140 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 285.2803ms
+2023-11-26 17:08:02.161 +01:00 [INF] Application is shutting down...

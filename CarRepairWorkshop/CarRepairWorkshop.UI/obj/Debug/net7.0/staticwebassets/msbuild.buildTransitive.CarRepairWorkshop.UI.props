@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\CarRepairWorkshop.UI.props" />
+</Project>
