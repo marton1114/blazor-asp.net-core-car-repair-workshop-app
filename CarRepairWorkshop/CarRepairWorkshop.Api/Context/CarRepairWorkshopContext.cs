@@ -1,11 +1,12 @@
 using CarRepairWorkshop.Contracts.Models;
+using Microsoft.Extensions.Options;
 
 namespace CarRepairWorkshop.Api.Context;
 using Microsoft.EntityFrameworkCore;
 
 public class CarRepairWorkshopContext : DbContext
 {
-    protected CarRepairWorkshopContext(DbContextOptions options) : base(options)
+    public CarRepairWorkshopContext(DbContextOptions options) : base(options)
     {
     }
     

@@ -1,0 +1,53 @@
+2023-11-26 16:18:23.822 +01:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2023-11-26 16:18:23.945 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "__EFMigrationsHistory" (
+    "MigrationId" TEXT NOT NULL CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY,
+    "ProductVersion" TEXT NOT NULL
+);
+2023-11-26 16:18:23.954 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-11-26 16:18:23.957 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-11-26 16:18:23.974 +01:00 [INF] Applying migration '20231126151708_Initial'.
+2023-11-26 16:18:24.011 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Customers" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Customers" PRIMARY KEY AUTOINCREMENT,
+    "Address" TEXT NOT NULL,
+    "EmailAddress" TEXT NOT NULL,
+    "PhoneNumber" TEXT NOT NULL
+);
+2023-11-26 16:18:24.012 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Vehicle" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Vehicle" PRIMARY KEY AUTOINCREMENT,
+    "VIN" TEXT NOT NULL,
+    "LicensePlate" TEXT NOT NULL
+);
+2023-11-26 16:18:24.013 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "VehicleModels" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_VehicleModels" PRIMARY KEY AUTOINCREMENT,
+    "ModelName" TEXT NOT NULL,
+    "Make" TEXT NOT NULL,
+    "Year" INTEGER NOT NULL
+);
+2023-11-26 16:18:24.013 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Jobs" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Jobs" PRIMARY KEY AUTOINCREMENT,
+    "CustomerId" INTEGER NOT NULL,
+    "VehicleId" INTEGER NOT NULL,
+    "Description" TEXT NULL,
+    "JobCategory" INTEGER NOT NULL,
+    "Severity" INTEGER NOT NULL,
+    "JobStatus" INTEGER NOT NULL,
+    CONSTRAINT "FK_Jobs_Customers_CustomerId" FOREIGN KEY ("CustomerId") REFERENCES "Customers" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_Jobs_Vehicle_VehicleId" FOREIGN KEY ("VehicleId") REFERENCES "Vehicle" ("Id") ON DELETE CASCADE
+);
+2023-11-26 16:18:24.014 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Jobs_CustomerId" ON "Jobs" ("CustomerId");
+2023-11-26 16:18:24.014 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Jobs_VehicleId" ON "Jobs" ("VehicleId");
+2023-11-26 16:18:24.014 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20231126151708_Initial', '7.0.12');
