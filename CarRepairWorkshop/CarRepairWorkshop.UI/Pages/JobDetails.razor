@@ -1,0 +1,55 @@
+@page "/job-details/{id:long}"
+@inject IJobService JobService
+@inject NavigationManager NavigationManager
+
+@if (Job is not null)
+{
+    <h3>Details of @Job.Id</h3>
+
+    <JobForm Job="Job" ButtonTitle="Update Job" OnValidSubmit="UpdateJob" />
+
+    <button class="btn btn-danger form-control mt-3" @onclick="DeleteJob">Delete Job</button>
+}
+else if (!_isFound)
+{
+    <p>Job with id '@Id' is not found!</p>
+}
+else
+{
+    <p>Loading...</p>
+}
+
+
+@code {
+
+    private bool _isFound = true;
+
+    [Parameter]
+    public long Id { get; set; }
+
+    private Job? Job { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            Job = await JobService.GetJobByIdAsync(Id);
+        }
+        catch
+        {
+            _isFound = false;
+        }
+    }
+
+    private async Task UpdateJob()
+    {
+        await JobService.UpdateJobAsync(Id, Job);
+        NavigationManager.NavigateTo("jobs");
+    }
+
+    private async Task DeleteJob()
+    {
+        await JobService.DeleteJobAsync(Id);
+        NavigationManager.NavigateTo("jobs");
+    }
+}
