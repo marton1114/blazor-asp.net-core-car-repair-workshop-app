@@ -15,13 +15,18 @@
         </InputSelect>         
     </div>
     <div class="mb-3">
-        <label class="form-label">Vehicle</label>
-        <InputSelect @bind-Value="Job.Vehicle" class="form-select">
-            @foreach (var vehicle in vehicles)
+        <label class="form-label">Vehicle Model</label>
+        <InputSelect @bind-Value="Job.VehicleModel" class="form-select">
+            @foreach (var vehicleModel in vehicleModels)
             {
-                <option value="@vehicle">@vehicle.ModelName</option>
+                <option value="@vehicleModel">@vehicleModel.ModelName</option>
             }
         </InputSelect>           
+    </div>
+    <div class="mb-3">
+        <label class="form-label">License Plate</label>
+        <InputText @bind-Value="Job.LicensePlate" class="form-control"/>
+        <ValidationMessage For="() => Job.LicensePlate" />
     </div>
     <div class="mb-3">
         <label class="form-label">Description</label>
@@ -48,9 +53,6 @@
 </EditForm>
 
 @code {
-    private bool isChecked = true;
-    private bool isChecked2 = true;
-    
     [Parameter]
     public Job Job { get; set; }
     
@@ -61,10 +63,10 @@
     public Func<Task> OnValidSubmit { get; set; }
     
     IEnumerable<Customer>? customers { get; set; }
-    IEnumerable<VehicleModel>? vehicles { get; set; }
+    IEnumerable<VehicleModel>? vehicleModels { get; set; }
     protected override async Task OnInitializedAsync()
     {
         customers = await CustomerService.GetCustomersAsync();
-        vehicles = await VehicleModelService.GetVehicleModelsAsync();
+        vehicleModels = await VehicleModelService.GetVehicleModelsAsync();
     }
 }

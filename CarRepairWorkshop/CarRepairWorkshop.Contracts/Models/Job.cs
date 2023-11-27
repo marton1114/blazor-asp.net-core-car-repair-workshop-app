@@ -13,7 +13,11 @@ public class Job
     public Customer? Customer { get; set; }
     
     [Required]
-    public Vehicle? Vehicle { get; set; }
+    public VehicleModel? VehicleModel { get; set; }
+    
+    [Required]
+    [RegularExpression(@"^[A-Z]{3}-\d{3}$")]
+    public string? LicensePlate { get; set; }
     
     [MaxLength(150)]
     // [RegularExpression(@"\S")]
