@@ -75,10 +75,6 @@ namespace CarRepairWorkshop.Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CustomerId");
-
-                    b.HasIndex("VehicleModelId");
-
                     b.ToTable("Jobs");
                 });
 
@@ -103,25 +99,6 @@ namespace CarRepairWorkshop.Api.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("VehicleModels");
-                });
-
-            modelBuilder.Entity("CarRepairWorkshop.Contracts.Models.Job", b =>
-                {
-                    b.HasOne("CarRepairWorkshop.Contracts.Models.Customer", "Customer")
-                        .WithMany()
-                        .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("CarRepairWorkshop.Contracts.Models.VehicleModel", "VehicleModel")
-                        .WithMany()
-                        .HasForeignKey("VehicleModelId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Customer");
-
-                    b.Navigation("VehicleModel");
                 });
 #pragma warning restore 612, 618
         }

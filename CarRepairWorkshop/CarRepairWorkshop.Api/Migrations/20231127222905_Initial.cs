@@ -27,21 +27,6 @@ namespace CarRepairWorkshop.Api.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "VehicleModels",
-                columns: table => new
-                {
-                    Id = table.Column<long>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    ModelName = table.Column<string>(type: "TEXT", nullable: false),
-                    Make = table.Column<string>(type: "TEXT", nullable: false),
-                    Year = table.Column<int>(type: "INTEGER", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_VehicleModels", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Jobs",
                 columns: table => new
                 {
@@ -58,39 +43,32 @@ namespace CarRepairWorkshop.Api.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Jobs", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Jobs_Customers_CustomerId",
-                        column: x => x.CustomerId,
-                        principalTable: "Customers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Jobs_VehicleModels_VehicleModelId",
-                        column: x => x.VehicleModelId,
-                        principalTable: "VehicleModels",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateIndex(
-                name: "IX_Jobs_CustomerId",
-                table: "Jobs",
-                column: "CustomerId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Jobs_VehicleModelId",
-                table: "Jobs",
-                column: "VehicleModelId");
+            migrationBuilder.CreateTable(
+                name: "VehicleModels",
+                columns: table => new
+                {
+                    Id = table.Column<long>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    ModelName = table.Column<string>(type: "TEXT", nullable: false),
+                    Make = table.Column<string>(type: "TEXT", nullable: false),
+                    Year = table.Column<int>(type: "INTEGER", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_VehicleModels", x => x.Id);
+                });
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Jobs");
+                name: "Customers");
 
             migrationBuilder.DropTable(
-                name: "Customers");
+                name: "Jobs");
 
             migrationBuilder.DropTable(
                 name: "VehicleModels");

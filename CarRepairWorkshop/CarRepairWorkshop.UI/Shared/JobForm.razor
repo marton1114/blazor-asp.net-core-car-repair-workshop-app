@@ -1,5 +1,6 @@
 @inject ICustomerService CustomerService
 @inject IVehicleModelService VehicleModelService
+@inject IJobService JobService
 
 <EditForm Model="Job" OnValidSubmit="OnValidSubmit">
     <DataAnnotationsValidator />
@@ -7,21 +8,27 @@
     
     <div class="mb-3">
         <label class="form-label">Customer</label>
-        <InputSelect @bind-Value="Job.Customer" class="form-select">
-            @foreach (var customer in customers)
+        <InputSelect @bind-Value="Job.CustomerId" class="form-select">
+            @if (customers is not null)
             {
-                <option value="@customer">@customer.Name</option>
+                foreach (var customer in customers)
+                {
+                    <option value="@customer.Id">@customer.Name</option>
+                }
             }
-        </InputSelect>         
+        </InputSelect>
     </div>
     <div class="mb-3">
         <label class="form-label">Vehicle Model</label>
-        <InputSelect @bind-Value="Job.VehicleModel" class="form-select">
-            @foreach (var vehicleModel in vehicleModels)
+        <InputSelect @bind-Value="Job.VehicleModelId" class="form-select">
+            @if (vehicleModels is not null)
             {
-                <option value="@vehicleModel">@vehicleModel.ModelName</option>
+                foreach (var vehicleModel in vehicleModels)
+                {
+                    <option value="@vehicleModel.Id">@vehicleModel.ModelName</option>
+                }
             }
-        </InputSelect>           
+        </InputSelect>
     </div>
     <div class="mb-3">
         <label class="form-label">License Plate</label>
@@ -35,38 +42,42 @@
     </div>
     <div class="mb-3">
         <label class="form-label">Job Category</label>
-        @* <InputNumber @bind-Value="Job.JobCategory" class="form-control"/> *@
-        @* <ValidationMessage For="() => Job.JobCategory" /> *@
+        <InputSelect @bind-Value="Job.JobCategory" class="form-select">
+            <option value="@(JobCategory.Body)">@JobCategory.Body</option>
+            <option value="@JobCategory.Engine">@JobCategory.Engine</option>
+            <option value="@JobCategory.Undercarriage">@JobCategory.Undercarriage</option>
+            <option value="@JobCategory.BrakingSystem">@JobCategory.BrakingSystem</option>
+        </InputSelect>
+        <ValidationMessage For="() => Job.JobCategory" />
     </div>
     <div class="mb-3">
         <label class="form-label">Severity</label>
         <InputNumber @bind-Value="Job.Severity" class="form-control"/>
         <ValidationMessage For="() => Job.Severity" />
     </div>
-    <div class="mb-3">
-        <label class="form-label">Job Status</label>
-        @* <InputNumber @bind-Value="Job.JobStatus" class="form-control"/> *@
-        @* <ValidationMessage For="() => Job.JobStatus" /> *@
-    </div>
 
     <button type="submit" class="btn btn-primary form-control">@ButtonTitle</button>
 </EditForm>
 
 @code {
+
     [Parameter]
     public Job Job { get; set; }
-    
+
     [Parameter]
     public string ButtonTitle { get; set; }
-    
+
     [Parameter]
     public Func<Task> OnValidSubmit { get; set; }
-    
+
     IEnumerable<Customer>? customers { get; set; }
     IEnumerable<VehicleModel>? vehicleModels { get; set; }
+
     protected override async Task OnInitializedAsync()
     {
         customers = await CustomerService.GetCustomersAsync();
         vehicleModels = await VehicleModelService.GetVehicleModelsAsync();
+
+        Job.JobStatus = JobStatus.Scheduled;
     }
 }

@@ -50,8 +50,8 @@ public class JobService : IJobService
     public async Task Update(Job newJob)
     {
         var existingJob = await Get(newJob.Id);
-        existingJob.Customer = newJob.Customer;
-        existingJob.VehicleModel = newJob.VehicleModel;
+        existingJob.CustomerId = newJob.CustomerId;
+        existingJob.VehicleModelId = newJob.VehicleModelId;
         existingJob.LicensePlate = newJob.LicensePlate;
         existingJob.Description = newJob.Description;
         existingJob.JobCategory = newJob.JobCategory;

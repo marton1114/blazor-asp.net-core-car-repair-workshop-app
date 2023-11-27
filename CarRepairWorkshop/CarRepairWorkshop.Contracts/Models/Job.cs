@@ -10,10 +10,12 @@ public class Job
     public long Id { get; set; }
     
     [Required]
-    public Customer? Customer { get; set; }
+    [ForeignKey("CustomerId")]
+    public long CustomerId { get; set; }
     
     [Required]
-    public VehicleModel? VehicleModel { get; set; }
+    [ForeignKey("VehicleModelId")]
+    public long VehicleModelId { get; set; }
     
     [Required]
     [RegularExpression(@"^[A-Z]{3}-\d{3}$")]
