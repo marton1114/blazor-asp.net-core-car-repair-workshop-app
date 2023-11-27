@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZnEP4kE6Bi7V1ZHITlfkEXBupbNd8td9W4JBXAEZq6HqLdZV60ToaSpestWLNwaw0r2jlDz4nn0idPv7VzZwsw==",
+  "dgSpecHash": "CWlVzv2MX6fYusDV5j/jXMDjqMvk8o4+bXz5McxnprtBjgKOTS0G765Yyir1qu+1QlOMT2gPnBkhqiaOkV9FoQ==",
   "success": true,
   "projectFilePath": "D:\\Personal\\Egyetem\\Felevek es vizsgak\\Kötelezően választott tárgyak\\NI_CSharp\\beadando\\CarRepairWorkshop\\CarRepairWorkshop.UI\\CarRepairWorkshop.UI.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,10 @@
     "C:\\Users\\Marci\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "C:\\Users\\Marci\\.nuget\\packages\\microsoft.jsinterop\\7.0.11\\microsoft.jsinterop.7.0.11.nupkg.sha512",
     "C:\\Users\\Marci\\.nuget\\packages\\microsoft.jsinterop.webassembly\\7.0.11\\microsoft.jsinterop.webassembly.7.0.11.nupkg.sha512",
+    "C:\\Users\\Marci\\.nuget\\packages\\syncfusion.blazor.buttons\\23.2.5\\syncfusion.blazor.buttons.23.2.5.nupkg.sha512",
+    "C:\\Users\\Marci\\.nuget\\packages\\syncfusion.blazor.core\\23.2.5\\syncfusion.blazor.core.23.2.5.nupkg.sha512",
+    "C:\\Users\\Marci\\.nuget\\packages\\syncfusion.blazor.themes\\23.2.5\\syncfusion.blazor.themes.23.2.5.nupkg.sha512",
+    "C:\\Users\\Marci\\.nuget\\packages\\syncfusion.licensing\\23.2.5\\syncfusion.licensing.23.2.5.nupkg.sha512",
     "C:\\Users\\Marci\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
     "C:\\Users\\Marci\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\Marci\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",

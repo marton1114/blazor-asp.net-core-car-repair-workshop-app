@@ -22,4 +22,9 @@ public class Customer
     [Required]
     [Phone]
     public string? PhoneNumber { get; set; }
+
+    public override string ToString()
+    {
+        return "Customer: " + Name;
+    }
 }

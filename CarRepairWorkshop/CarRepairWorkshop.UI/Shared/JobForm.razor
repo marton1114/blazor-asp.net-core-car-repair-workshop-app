@@ -1,0 +1,70 @@
+@inject ICustomerService CustomerService
+@inject IVehicleModelService VehicleModelService
+
+<EditForm Model="Job" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    
+    <div class="mb-3">
+        <label class="form-label">Customer</label>
+        <InputSelect @bind-Value="Job.Customer" class="form-select">
+            @foreach (var customer in customers)
+            {
+                <option value="@customer">@customer.Name</option>
+            }
+        </InputSelect>         
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Vehicle</label>
+        <InputSelect @bind-Value="Job.Vehicle" class="form-select">
+            @foreach (var vehicle in vehicles)
+            {
+                <option value="@vehicle">@vehicle.ModelName</option>
+            }
+        </InputSelect>           
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Description</label>
+        <InputText @bind-Value="Job.Description" class="form-control"/>
+        <ValidationMessage For="() => Job.Description" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Job Category</label>
+        @* <InputNumber @bind-Value="Job.JobCategory" class="form-control"/> *@
+        @* <ValidationMessage For="() => Job.JobCategory" /> *@
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Severity</label>
+        <InputNumber @bind-Value="Job.Severity" class="form-control"/>
+        <ValidationMessage For="() => Job.Severity" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Job Status</label>
+        @* <InputNumber @bind-Value="Job.JobStatus" class="form-control"/> *@
+        @* <ValidationMessage For="() => Job.JobStatus" /> *@
+    </div>
+
+    <button type="submit" class="btn btn-primary form-control">@ButtonTitle</button>
+</EditForm>
+
+@code {
+    private bool isChecked = true;
+    private bool isChecked2 = true;
+    
+    [Parameter]
+    public Job Job { get; set; }
+    
+    [Parameter]
+    public string ButtonTitle { get; set; }
+    
+    [Parameter]
+    public Func<Task> OnValidSubmit { get; set; }
+    
+    IEnumerable<Customer>? customers { get; set; }
+    IEnumerable<VehicleModel>? vehicles { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        customers = await CustomerService.GetCustomersAsync();
+        vehicles = await VehicleModelService.GetVehicleModelsAsync();
+    }
+}

@@ -1,0 +1,47 @@
+@page "/jobs"
+@inject IJobService jobService
+@inject ICustomerService CustomerService
+
+@if (Jobs is not null)
+{
+    <table class="table table-hover table-bordered">
+        <thead>
+        <th>Customer</th>
+        <th>Vehicle</th>
+        <th>Job Status</th>
+        <th>Job Category</th>
+        <th>Severity</th>
+        <th>Work Hour Estimation</th>
+        <th>Description</th>
+        <th></th>
+        </thead>
+        <tbody>
+        @foreach (var job in Jobs)
+        {
+            <tr>
+                <td>@job.Customer</td>
+                <td>@job.Vehicle</td>
+                <td>@job.JobStatus</td>
+                <td>@job.JobCategory</td>
+                <td>@job.Severity</td>
+                <td> TODO </td>
+                <td>@job.Description</td>
+                <td>
+                    <a href="job-details/@job.Id">Details</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    
+    private IEnumerable<Job>? Jobs { get; set; }
+
+    
+    protected override async Task OnInitializedAsync()
+    {
+        Jobs = await jobService.GetJobsAsync();
+    }
+}

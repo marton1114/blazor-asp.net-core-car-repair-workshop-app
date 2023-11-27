@@ -1,0 +1,20 @@
+@page "/add-job"
+@inject IJobService JobService
+@inject NavigationManager NavigationManager
+
+<h3>Add Job</h3>
+
+<JobForm Job="Job" ButtonTitle="Add Job" OnValidSubmit="AddJob"  />
+
+@code {
+
+    private Job Job { get; set; } = new();
+    
+    
+    private async Task AddJob()
+    {
+        await JobService.AddJobAsync(Job);
+        NavigationManager.NavigateTo("jobs");
+    }
+
+}

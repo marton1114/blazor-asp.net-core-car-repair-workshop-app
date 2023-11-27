@@ -13,6 +13,14 @@ public class Vehicle
     public string? VIN { get; set; }
     
     [Required]
+    public VehicleModel? VehicleModel { get; set; }
+    
+    [Required]
     [RegularExpression(@"^[A-Z]{3}-\d{3}$")]
     public string? LicensePlate { get; set; }
+
+    public override string ToString()
+    {
+        return "Vehicle: " + VIN;
+    }
 }
