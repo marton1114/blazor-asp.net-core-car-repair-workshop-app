@@ -18,5 +18,5 @@ public class VehicleModel
     
     [Required]
     [YearRange(Minimum = 1900)]
-    public int Year { get; set; }
+    public int? Year { get; set; }
 }

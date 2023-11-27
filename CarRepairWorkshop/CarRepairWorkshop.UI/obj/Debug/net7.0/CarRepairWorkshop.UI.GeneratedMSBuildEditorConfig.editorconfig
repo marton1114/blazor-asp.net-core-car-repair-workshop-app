@@ -32,12 +32,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Personal/Egyetem/Felevek es vizsgak/Kötelezően választott tárgyak/NI_CSharp/beadando/CarRepairWorkshop/CarRepairWorkshop.UI/Pages/VehicleModelAdd.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWNsZU1vZGVsQWRkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Personal/Egyetem/Felevek es vizsgak/Kötelezően választott tárgyak/NI_CSharp/beadando/CarRepairWorkshop/CarRepairWorkshop.UI/Pages/VehicleModelDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWNsZU1vZGVsRGV0YWlscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Personal/Egyetem/Felevek es vizsgak/Kötelezően választott tárgyak/NI_CSharp/beadando/CarRepairWorkshop/CarRepairWorkshop.UI/Pages/VehicleModelList.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVoaWNsZU1vZGVsTGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Personal/Egyetem/Felevek es vizsgak/Kötelezően választott tárgyak/NI_CSharp/beadando/CarRepairWorkshop/CarRepairWorkshop.UI/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Personal/Egyetem/Felevek es vizsgak/Kötelezően választott tárgyak/NI_CSharp/beadando/CarRepairWorkshop/CarRepairWorkshop.UI/Shared/VehicleModelForm.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFZlaGljbGVNb2RlbEZvcm0ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Personal/Egyetem/Felevek es vizsgak/Kötelezően választott tárgyak/NI_CSharp/beadando/CarRepairWorkshop/CarRepairWorkshop.UI/_Imports.razor]
