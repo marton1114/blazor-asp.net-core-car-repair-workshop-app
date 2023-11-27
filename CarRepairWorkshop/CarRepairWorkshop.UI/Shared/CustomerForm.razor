@@ -1,0 +1,38 @@
+<EditForm Model="Customer" OnValidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    
+    <div class="mb-3">
+        <label class="form-label">Name</label>
+        <InputText @bind-Value="Customer.Name" class="form-control"/>
+        <ValidationMessage For="() => Customer.Name" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Address</label>
+        <InputText @bind-Value="Customer.Address" class="form-control"/>
+        <ValidationMessage For="() => Customer.Address" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Email Address</label>
+        <InputText type="email" @bind-Value="Customer.EmailAddress" class="form-control"/>
+        <ValidationMessage For="() => Customer.EmailAddress" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Phone Number</label>
+        <InputText type="phone" @bind-Value="Customer.PhoneNumber" class="form-control"/>
+        <ValidationMessage For="() => Customer.PhoneNumber" />
+    </div>
+
+    <button type="submit" class="btn btn-primary form-control">@ButtonTitle</button>
+</EditForm>
+
+@code {
+    [Parameter]
+    public Customer Customer { get; set; }
+    
+    [Parameter]
+    public string ButtonTitle { get; set; }
+    
+    [Parameter]
+    public Func<Task> OnValidSubmit { get; set; }
+}

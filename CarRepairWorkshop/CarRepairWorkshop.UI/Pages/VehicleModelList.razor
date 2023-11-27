@@ -1,5 +1,8 @@
 @page "/vehicle-models"
 @inject IVehicleModelService vehicleModelService
+@inject NavigationManager NavigationManager
+
+<button class="btn btn-primary form-control" @onclick="AddVehicleModel">Add a new Vehicle Model</button>
 
 @if (VehicleModels is not null)
 {
@@ -33,5 +36,10 @@
     protected override async Task OnInitializedAsync()
     {
         VehicleModels = await vehicleModelService.GetVehicleModelsAsync();
+    }
+    
+    private async Task AddVehicleModel()
+    {
+        NavigationManager.NavigateTo("add-vehicle-model");
     }
 }

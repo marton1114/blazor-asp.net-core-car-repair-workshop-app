@@ -1,0 +1,55 @@
+@page "/customer-details/{id:long}"
+@inject ICustomerService CustomerService
+@inject NavigationManager NavigationManager
+
+@if (Customer is not null)
+{
+    <h3>Details of @Customer.Name</h3>
+
+    <CustomerForm Customer="Customer" ButtonTitle="Update Customer" OnValidSubmit="UpdateCustomer" />
+
+    <button class="btn btn-danger form-control mt-3" @onclick="DeleteCustomer">Delete Customer</button>
+}
+else if (!_isFound)
+{
+    <p>Customer with id '@Id' is not found!</p>
+}
+else
+{
+    <p>Loading...</p>
+}
+
+
+@code {
+
+    private bool _isFound = true;
+
+    [Parameter]
+    public long Id { get; set; }
+
+    private Customer? Customer { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            Customer = await CustomerService.GetCustomerByIdAsync(Id);
+        }
+        catch
+        {
+            _isFound = false;
+        }
+    }
+
+    private async Task UpdateCustomer()
+    {
+        await CustomerService.UpdateCustomerAsync(Id, Customer);
+        NavigationManager.NavigateTo("customers");
+    }
+
+    private async Task DeleteCustomer()
+    {
+        await CustomerService.DeleteCustomerAsync(Id);
+        NavigationManager.NavigateTo("customers");
+    }
+}

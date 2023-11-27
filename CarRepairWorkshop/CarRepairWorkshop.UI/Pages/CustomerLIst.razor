@@ -1,0 +1,39 @@
+@page "/customers"
+@inject ICustomerService customerService
+
+@if (Customers is not null)
+{
+    <table class="table table-hover table-bordered">
+        <thead>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Email Address</th>
+        <th>Phone Number</th>
+        <th></th>
+        </thead>
+        <tbody>
+        @foreach (var customer in Customers)
+        {
+            <tr>
+                <td>@customer.Name</td>
+                <td>@customer.Address</td>
+                <td>@customer.EmailAddress</td>
+                <td>@customer.PhoneNumber</td>
+                <td>
+                    <a href="customer-details/@customer.Id">Details</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    
+    private IEnumerable<Customer>? Customers { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Customers = await customerService.GetCustomersAsync();
+    }
+}

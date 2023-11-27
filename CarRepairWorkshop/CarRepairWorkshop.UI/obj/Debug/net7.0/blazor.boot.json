@@ -198,15 +198,15 @@
       "mscorlib.dll": "sha256-X+o60j6cZnlI2vFFjdH81yYTAxx13\/wqnNSWTKbDsyw=",
       "netstandard.dll": "sha256-Cr6slBs\/R2v2t\/vecFDHbQHakbEhar0adYu0YemwiXI=",
       "System.Private.CoreLib.dll": "sha256-dDw5nzGJhW1jOjGfSJcs\/Mi4KQ+DZygXnoK+vJ+jHyk=",
-      "CarRepairWorkshop.Contracts.dll": "sha256-DSIXmRLbXaZKOPNN\/Nj9VKYM1P+wx4p8AeZPQoZgFGw=",
-      "CarRepairWorkshop.UI.dll": "sha256-eVMJ+Roj7NQ4J\/Ook6Aey\/xGlTy5U0i8ANzfG0oUdoQ="
+      "CarRepairWorkshop.Contracts.dll": "sha256-z\/fk3TjjvUdA1InvyVgV3j9i8OrXAz03hGAaY3qspuI=",
+      "CarRepairWorkshop.UI.dll": "sha256-GehKNa\/rKTGLZ+l9l44+s6Txh9xRdrPE14aFPCoof+g="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "CarRepairWorkshop.Contracts.pdb": "sha256-\/7+nunHkAISlWWfcJh+7e\/o0gC+NSDbhwvldtxZQA0k=",
-      "CarRepairWorkshop.UI.pdb": "sha256-AYXtpK6dkSXy1Lu5\/hFTPPbkMSEFufRSxqMI+eqa6ks="
+      "CarRepairWorkshop.Contracts.pdb": "sha256-DRT9I+Vw6FERppD0W+JWbSCaYLXfeQG98gD0tWG3EE8=",
+      "CarRepairWorkshop.UI.pdb": "sha256-nAXpAKNwnqGTe2I2RFU1R4vfyOlyTkTcDisWkYwsOL4="
     },
     "runtime": {
       "dotnet.7.0.11.tn68wbffec.js": "sha256-RtIVigdAD1mUvR4pxoKyD8kcQgw4INP81v+PVSqkeQY=",

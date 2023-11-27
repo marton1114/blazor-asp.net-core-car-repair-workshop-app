@@ -50,6 +50,7 @@ public class CustomerService : ICustomerService
     public async Task Update(Customer newCustomer)
     {
         var existingCustomer = await Get(newCustomer.Id);
+        existingCustomer.Name = newCustomer.Name;
         existingCustomer.Address = newCustomer.Address;
         existingCustomer.EmailAddress = newCustomer.EmailAddress;
         existingCustomer.PhoneNumber = newCustomer.PhoneNumber;
