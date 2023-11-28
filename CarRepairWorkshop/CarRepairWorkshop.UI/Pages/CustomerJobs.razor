@@ -1,0 +1,102 @@
+@page "/customer-jobs/{id:long}"
+@inject IJobService jobService
+@inject ICustomerService CustomerService
+
+@if (Jobs is not null)
+{
+    <h3>Jobs of @Customer.Name</h3>
+                                 
+    <table class="table table-hover table-bordered">
+        <thead>
+        <th>Vehicle Model Name</th>
+        <th>Vehicle Make</th>
+        <th>Manufacturing Year</th>
+        <th>Job Status</th>
+        <th>Job Category</th>
+        <th>Severity</th>
+        <th>Man Hours Estimation</th>
+        <th>Description</th>
+        <th></th>
+        </thead>
+        <tbody>
+        @foreach (var job in Jobs)
+        {
+            <tr>
+                <td>@job.VehicleModelName</td>
+                <td>@job.Make</td>
+                <td>@job.Year</td>
+                <td>@job.JobStatus</td>
+                <td>@job.JobCategory</td>
+                <td>@job.Severity</td>
+                <td>@($"{GetManHoursEstimation(job.JobCategory, job.Year, job.Severity):0.##} hours")</td>
+                <td>@job.Description</td>
+                <td>
+                    <a href="job-details/@job.Id">Details</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    private bool _isFound = true;
+
+    private IEnumerable<Job>? Jobs { get; set; }
+
+    [Parameter]
+    public long Id { get; set; }
+
+    private Customer? Customer { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            Customer = await CustomerService.GetCustomerByIdAsync(Id);
+            Jobs = (await jobService.GetJobsAsync()).Where(job => job.CustomerId == Id);
+        }
+        catch
+        {
+            _isFound = false;
+        }
+    }
+
+    private double GetManHoursEstimation(JobCategory jobCategory, int? jobYear, int jobSeverity)
+    {
+
+        double result = jobCategory switch
+        {
+            JobCategory.Body => 3,
+            JobCategory.Engine => 8,
+            JobCategory.Undercarriage => 6,
+            JobCategory.BrakingSystem => 4,
+            _ => 0.0
+            };
+
+        int? age = DateTime.Now.Year - jobYear;
+        
+        if (age is >= 0 and < 5)
+            result *= 0.5;
+        else if (age is >= 5 and < 10)
+            result *= 1.0;
+        else if (age is >= 10 and < 20)
+            result *= 1.5;
+        else if (age is >= 20)
+            result *= 1.5;
+        
+        if (jobSeverity is >= 1 and <= 2)
+            result *= 0.2;
+        else if (jobSeverity is >= 3 and <= 4)
+            result *= 0.4;
+        else if (jobSeverity is >= 5 and <= 7)
+            result *= 0.6;
+        else if (jobSeverity is >= 8 and <=9)
+            result *= 0.8;
+        else if (jobSeverity is 10)
+            result = 1.0;
+        
+        return result;
+    }
+
+}
