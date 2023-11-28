@@ -16,11 +16,11 @@ public class Customer
     public string? Address { get; set; }
     
     [Required]
-    [EmailAddress]
+    [EmailAddress(ErrorMessage = "Invalid Email Address!")]
     public string? EmailAddress { get; set; }
     
     [Required]
-    [Phone]
+    [Phone(ErrorMessage = "Invalid Phone Number!")]
     public string? PhoneNumber { get; set; }
 
     public override string ToString()
