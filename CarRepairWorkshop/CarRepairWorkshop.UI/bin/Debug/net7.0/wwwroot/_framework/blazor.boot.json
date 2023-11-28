@@ -203,14 +203,14 @@
       "netstandard.dll": "sha256-Cr6slBs\/R2v2t\/vecFDHbQHakbEhar0adYu0YemwiXI=",
       "System.Private.CoreLib.dll": "sha256-dDw5nzGJhW1jOjGfSJcs\/Mi4KQ+DZygXnoK+vJ+jHyk=",
       "CarRepairWorkshop.Contracts.dll": "sha256-Zjy2ViLl8hXI+5KcbnZ4etzv7eTWl2HkoO+zOohYZbc=",
-      "CarRepairWorkshop.UI.dll": "sha256-FvMlwtdjE\/q9OLluIxnkICcPqMiaMoXm3nGP+V\/n+rg="
+      "CarRepairWorkshop.UI.dll": "sha256-gSYTKenDnw5YdqTAifCeqV8F5s9NGiThdqRQ4l5em0g="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "CarRepairWorkshop.Contracts.pdb": "sha256-MyBSfq+WDgJwl47UjoSO8Y+PEoXKA\/Wn5y6vVHbiRtY=",
-      "CarRepairWorkshop.UI.pdb": "sha256-FGEfFOz6tjKMOFnCBJUxH7H7Pi9WTgXUl4f9r4uSX7g="
+      "CarRepairWorkshop.UI.pdb": "sha256-wdobiqzwaax4NNlfd7r7ev1svmwzl9MAa757jtagOsY="
     },
     "runtime": {
       "dotnet.7.0.11.tn68wbffec.js": "sha256-RtIVigdAD1mUvR4pxoKyD8kcQgw4INP81v+PVSqkeQY=",
