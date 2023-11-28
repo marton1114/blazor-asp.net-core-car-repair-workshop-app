@@ -5,9 +5,21 @@
 @if (Job is not null)
 {
     <h3>Details of @Job.Id</h3>
-
+    @switch (Job.JobStatus)
+    {
+        case JobStatus.Scheduled:
+            <button class="btn btn-primary mt-3" @onclick="() => Job.JobStatus = JobStatus.InProcess">@JobStatus.Scheduled</button>
+            break;
+        case JobStatus.InProcess:
+            <button class="btn btn-secondary mt-3" @onclick="() => Job.JobStatus = JobStatus.Done">@JobStatus.InProcess</button>
+            break;
+        case JobStatus.Done:
+            <button class="btn btn-success mt-3">@JobStatus.Done</button>
+            break;
+    }
+    
     <JobForm Job="Job" ButtonTitle="Update Job" OnValidSubmit="UpdateJob" />
-
+    
     <button class="btn btn-danger form-control mt-3" @onclick="DeleteJob">Delete Job</button>
 }
 else if (!_isFound)
@@ -52,4 +64,5 @@ else
         await JobService.DeleteJobAsync(Id);
         NavigationManager.NavigateTo("jobs");
     }
+
 }
