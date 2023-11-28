@@ -73,10 +73,6 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "D:\\Personal\\Egyetem\\Felevek es vizsgak\\Kötelezően választott tárgyak\\NI_CSharp\\beadando\\CarRepairWorkshop\\CarRepairWorkshop.UI\\wwwroot\\sample-data\\weather.json",
-      "PackagePath": "staticwebassets\\sample-data\\weather.json"
-    },
-    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.CarRepairWorkshop.UI.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

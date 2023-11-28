@@ -1,5 +1,6 @@
 @inject ICustomerService CustomerService
 @inject IJobService JobService
+@inject NavigationManager NavigationManager
 
 <EditForm Model="Job" OnValidSubmit="OnValidSubmit">
     <DataAnnotationsValidator />
@@ -16,6 +17,7 @@
                 }
             }
         </InputSelect>
+        <button class="btn btn-secondary form-control mt-3" @onclick='() => NavigationManager.NavigateTo("/add-customer")'>New Customer</button>
     </div>
     <div class="mb-3">
         <label class="form-label">Vehicle Model Name</label>

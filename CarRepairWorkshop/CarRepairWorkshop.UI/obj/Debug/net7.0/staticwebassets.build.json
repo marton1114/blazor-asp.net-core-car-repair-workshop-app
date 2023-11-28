@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Fo/wjp6eZqQMTwc24NNnUwB7tMMcoNRjwQjxLncD1Ko=",
+  "Hash": "UPHN5usQELqQjaE/SODg5bQgclSEXW3xqoQ8aeAHDBk=",
   "Source": "CarRepairWorkshop.UI",
   "BasePath": "/",
   "Mode": "Root",
@@ -7920,23 +7920,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
-    },
-    {
-      "Identity": "D:\\Personal\\Egyetem\\Felevek es vizsgak\\Kötelezően választott tárgyak\\NI_CSharp\\beadando\\CarRepairWorkshop\\CarRepairWorkshop.UI\\wwwroot\\sample-data\\weather.json",
-      "SourceId": "CarRepairWorkshop.UI",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Personal\\Egyetem\\Felevek es vizsgak\\Kötelezően választott tárgyak\\NI_CSharp\\beadando\\CarRepairWorkshop\\CarRepairWorkshop.UI\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "sample-data/weather.json",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\sample-data\\weather.json"
     }
   ]
 }
