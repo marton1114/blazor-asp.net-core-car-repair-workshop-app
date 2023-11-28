@@ -1,5 +1,8 @@
 @page "/customers"
 @inject ICustomerService customerService
+@inject NavigationManager NavigationManager
+
+<button class="btn btn-primary form-control" @onclick="AddCustomer">Add a new Customer</button>
 
 @if (Customers is not null)
 {
@@ -35,5 +38,10 @@
     protected override async Task OnInitializedAsync()
     {
         Customers = await customerService.GetCustomersAsync();
+    }
+    
+    private async Task AddCustomer()
+    {
+        NavigationManager.NavigateTo("add-customer");
     }
 }

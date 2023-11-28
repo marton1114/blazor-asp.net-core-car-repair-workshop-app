@@ -1,0 +1,19 @@
+@page "/add-customer"
+@inject ICustomerService customerService
+@inject NavigationManager NavigationManager
+
+<h3>Add Vehicle Model</h3>
+
+<CustomerForm Customer="Customer" ButtonTitle="Add Customer" OnValidSubmit="AddCustomer" />
+
+@code {
+
+    private Customer Customer { get; set; } = new();
+
+    private async Task AddCustomer()
+    {
+        await customerService.AddCustomerAsync(Customer);
+        NavigationManager.NavigateTo("vehicle-models");
+    }
+
+}
