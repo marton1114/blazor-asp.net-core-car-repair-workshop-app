@@ -51,7 +51,9 @@ public class JobService : IJobService
     {
         var existingJob = await Get(newJob.Id);
         existingJob.CustomerId = newJob.CustomerId;
-        existingJob.VehicleModelId = newJob.VehicleModelId;
+        existingJob.VehicleModelName = newJob.VehicleModelName;
+        existingJob.Make = newJob.Make;
+        existingJob.Year = newJob.Year;
         existingJob.LicensePlate = newJob.LicensePlate;
         existingJob.Description = newJob.Description;
         existingJob.JobCategory = newJob.JobCategory;

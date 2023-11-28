@@ -25,6 +25,9 @@ public class Customer
 
     public override string ToString()
     {
-        return "Customer: " + Name;
+        return Name + ',' + '\n' + 
+               Address + ',' + '\n' +
+               EmailAddress + ',' + '\n' +
+               PhoneNumber;
     }
 }

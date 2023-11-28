@@ -13,6 +13,4 @@ public class CarRepairWorkshopContext : DbContext
     public virtual DbSet<Job> Jobs { get; set; }
     
     public virtual DbSet<Customer> Customers { get; set; }
-    
-    public virtual DbSet<VehicleModel> VehicleModels { get; set; }
 }

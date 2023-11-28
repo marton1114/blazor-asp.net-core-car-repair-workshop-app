@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CarRepairWorkshop.Api.Migrations
 {
     [DbContext(typeof(CarRepairWorkshopContext))]
-    [Migration("20231127222905_Initial")]
+    [Migration("20231128010258_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -70,28 +70,14 @@ namespace CarRepairWorkshop.Api.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Severity")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<long>("VehicleModelId")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Jobs");
-                });
-
-            modelBuilder.Entity("CarRepairWorkshop.Contracts.Models.VehicleModel", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("Make")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("ModelName")
+                    b.Property<int>("Severity")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("VehicleModelName")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
@@ -101,7 +87,7 @@ namespace CarRepairWorkshop.Api.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("VehicleModels");
+                    b.ToTable("Jobs");
                 });
 #pragma warning restore 612, 618
         }

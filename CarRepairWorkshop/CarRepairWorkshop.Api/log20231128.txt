@@ -923,3 +923,1172 @@ FROM "VehicleModels" AS "v"
 2023-11-28 00:42:20.603 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api)'
 2023-11-28 00:42:20.605 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/VehicleModels - - - 200 - application/json;+charset=utf-8 23.9647ms
 2023-11-28 00:42:32.418 +02:00 [INF] Application is shutting down...
+2023-11-28 00:44:39.714 +02:00 [INF] Now listening on: http://localhost:5093
+2023-11-28 00:44:39.807 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-28 00:44:39.809 +02:00 [INF] Hosting environment: Development
+2023-11-28 00:44:39.811 +02:00 [INF] Content root path: D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Api
+2023-11-28 00:44:40.424 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - -
+2023-11-28 00:44:40.850 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - - - 200 - text/html;charset=utf-8 436.3156ms
+2023-11-28 00:44:41.381 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - -
+2023-11-28 00:44:41.901 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 520.2454ms
+2023-11-28 00:44:46.867 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Jobs - -
+2023-11-28 00:44:46.879 +02:00 [INF] CORS policy execution successful.
+2023-11-28 00:44:46.886 +02:00 [WRN] Failed to determine the https port for redirect.
+2023-11-28 00:44:46.901 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 00:44:46.953 +02:00 [INF] Route matched with {action = "GetAll", controller = "Jobs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Job]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.JobsController (CarRepairWorkshop.Api).
+2023-11-28 00:44:47.283 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 00:44:47.300 +02:00 [INF] Jobs retrieved
+2023-11-28 00:44:49.196 +02:00 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CustomerId", "j"."Description", "j"."JobCategory", "j"."JobStatus", "j"."LicensePlate", "j"."Severity", "j"."VehicleModelId"
+FROM "Jobs" AS "j"
+2023-11-28 00:44:49.414 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2110.1587ms.
+2023-11-28 00:44:49.430 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Job, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 00:44:49.489 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) in 2522.8917ms
+2023-11-28 00:44:49.494 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 00:44:49.516 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Jobs - - - 200 - application/json;+charset=utf-8 2649.2129ms
+2023-11-28 00:46:08.434 +02:00 [INF] Application is shutting down...
+2023-11-28 00:53:44.749 +02:00 [INF] Now listening on: http://localhost:5093
+2023-11-28 00:53:44.851 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-28 00:53:44.853 +02:00 [INF] Hosting environment: Development
+2023-11-28 00:53:44.855 +02:00 [INF] Content root path: D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Api
+2023-11-28 00:53:45.812 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - -
+2023-11-28 00:53:46.255 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - - - 200 - text/html;charset=utf-8 451.9248ms
+2023-11-28 00:53:46.408 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/swagger-ui.css - -
+2023-11-28 00:53:46.488 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-11-28 00:53:46.493 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/swagger-ui.css - - - 0 144929 text/css 85.1286ms
+2023-11-28 00:53:46.783 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - -
+2023-11-28 00:53:47.319 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 534.9744ms
+2023-11-28 00:53:58.502 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Jobs - -
+2023-11-28 00:53:58.511 +02:00 [INF] CORS policy execution successful.
+2023-11-28 00:53:58.519 +02:00 [WRN] Failed to determine the https port for redirect.
+2023-11-28 00:53:58.533 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 00:53:58.590 +02:00 [INF] Route matched with {action = "GetAll", controller = "Jobs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Job]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.JobsController (CarRepairWorkshop.Api).
+2023-11-28 00:53:58.913 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 00:53:58.928 +02:00 [INF] Jobs retrieved
+2023-11-28 00:54:00.839 +02:00 [INF] Executed DbCommand (33ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CustomerId", "j"."Description", "j"."JobCategory", "j"."JobStatus", "j"."LicensePlate", "j"."Severity", "j"."VehicleModelId"
+FROM "Jobs" AS "j"
+2023-11-28 00:54:01.060 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2127.9994ms.
+2023-11-28 00:54:01.078 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Job, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 00:54:01.137 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) in 2534.5945ms
+2023-11-28 00:54:01.141 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 00:54:01.164 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Jobs - - - 200 - application/json;+charset=utf-8 2663.4778ms
+2023-11-28 00:55:52.516 +02:00 [INF] Application is shutting down...
+2023-11-28 01:38:44.562 +02:00 [INF] Now listening on: http://localhost:5093
+2023-11-28 01:38:44.648 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-28 01:38:44.651 +02:00 [INF] Hosting environment: Development
+2023-11-28 01:38:44.652 +02:00 [INF] Content root path: D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Api
+2023-11-28 01:38:45.396 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger - -
+2023-11-28 01:38:45.396 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - -
+2023-11-28 01:38:45.570 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger - - - 0 - - 179.6968ms
+2023-11-28 01:38:45.806 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - - - 200 - text/html;charset=utf-8 417.6382ms
+2023-11-28 01:38:45.934 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/swagger-ui.css - -
+2023-11-28 01:38:45.989 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-11-28 01:38:45.994 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/swagger-ui.css - - - 0 144929 text/css 59.4611ms
+2023-11-28 01:38:46.319 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - -
+2023-11-28 01:38:46.824 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 505.0982ms
+2023-11-28 01:38:59.761 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Customers - -
+2023-11-28 01:38:59.769 +02:00 [INF] CORS policy execution successful.
+2023-11-28 01:38:59.779 +02:00 [WRN] Failed to determine the https port for redirect.
+2023-11-28 01:38:59.791 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 01:38:59.843 +02:00 [INF] Route matched with {action = "GetAll", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Customer]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 01:39:00.169 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 01:39:00.186 +02:00 [INF] Customers retrieved
+2023-11-28 01:39:02.154 +02:00 [INF] Executed DbCommand (35ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+2023-11-28 01:39:02.386 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2192.7644ms.
+2023-11-28 01:39:02.404 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Customer, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 01:39:02.442 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) in 2585.8384ms
+2023-11-28 01:39:02.446 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 01:39:02.470 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Customers - - - 200 - application/json;+charset=utf-8 2711.7229ms
+2023-11-28 01:39:03.391 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Jobs - -
+2023-11-28 01:39:03.396 +02:00 [INF] CORS policy execution successful.
+2023-11-28 01:39:03.399 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 01:39:03.413 +02:00 [INF] Route matched with {action = "GetAll", controller = "Jobs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Job]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.JobsController (CarRepairWorkshop.Api).
+2023-11-28 01:39:03.422 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 01:39:03.432 +02:00 [INF] Jobs retrieved
+2023-11-28 01:39:03.492 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CustomerId", "j"."Description", "j"."JobCategory", "j"."JobStatus", "j"."LicensePlate", "j"."Severity", "j"."VehicleModelId"
+FROM "Jobs" AS "j"
+2023-11-28 01:39:03.562 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 135.8084ms.
+2023-11-28 01:39:03.566 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Job, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 01:39:03.602 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) in 182.6607ms
+2023-11-28 01:39:03.604 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 01:39:03.607 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Jobs - - - 200 - application/json;+charset=utf-8 216.8035ms
+2023-11-28 01:39:03.671 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/VehicleModels/2 - -
+2023-11-28 01:39:03.675 +02:00 [INF] CORS policy execution successful.
+2023-11-28 01:39:03.677 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api)'
+2023-11-28 01:39:03.702 +02:00 [INF] Route matched with {action = "Get", controller = "VehicleModels"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarRepairWorkshop.Contracts.Models.VehicleModel]] Get(Int32) on controller CarRepairWorkshop.Api.Controllers.VehicleModelsController (CarRepairWorkshop.Api).
+2023-11-28 01:39:03.736 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 01:39:04.072 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT "v"."Id", "v"."Make", "v"."ModelName", "v"."Year"
+FROM "VehicleModels" AS "v"
+WHERE "v"."Id" = @__p_0
+LIMIT 1
+2023-11-28 01:39:04.117 +02:00 [INF] VehicleModel retrieved. VehicleModel: {"Id":2,"ModelName":"Bmw m5","Make":"Bmw","Year":2004,"$type":"VehicleModel"}
+2023-11-28 01:39:04.131 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 390.8717ms.
+2023-11-28 01:39:04.134 +02:00 [INF] Executing OkObjectResult, writing value of type 'CarRepairWorkshop.Contracts.Models.VehicleModel'.
+2023-11-28 01:39:04.142 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api) in 435.3677ms
+2023-11-28 01:39:04.145 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api)'
+2023-11-28 01:39:04.149 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/VehicleModels/2 - - - 200 - application/json;+charset=utf-8 477.1046ms
+2023-11-28 01:39:53.277 +02:00 [INF] Application is shutting down...
+2023-11-28 01:40:14.259 +02:00 [INF] Now listening on: http://localhost:5093
+2023-11-28 01:40:14.365 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-28 01:40:14.368 +02:00 [INF] Hosting environment: Development
+2023-11-28 01:40:14.370 +02:00 [INF] Content root path: D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Api
+2023-11-28 01:40:15.161 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - -
+2023-11-28 01:40:15.565 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - - - 200 - text/html;charset=utf-8 410.8056ms
+2023-11-28 01:40:15.698 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/swagger-ui.css - -
+2023-11-28 01:40:15.796 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-11-28 01:40:15.809 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/swagger-ui.css - - - 0 144929 text/css 110.9345ms
+2023-11-28 01:40:16.210 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - -
+2023-11-28 01:40:16.855 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 645.2955ms
+2023-11-28 01:40:27.276 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Customers - -
+2023-11-28 01:40:27.286 +02:00 [INF] CORS policy execution successful.
+2023-11-28 01:40:27.296 +02:00 [WRN] Failed to determine the https port for redirect.
+2023-11-28 01:40:27.308 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 01:40:27.364 +02:00 [INF] Route matched with {action = "GetAll", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Customer]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 01:40:27.704 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 01:40:27.720 +02:00 [INF] Customers retrieved
+2023-11-28 01:40:29.617 +02:00 [INF] Executed DbCommand (43ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+2023-11-28 01:40:29.822 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2099.4793ms.
+2023-11-28 01:40:29.840 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Customer, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 01:40:29.878 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) in 2501.1075ms
+2023-11-28 01:40:29.882 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 01:40:29.905 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Customers - - - 200 - application/json;+charset=utf-8 2631.3486ms
+2023-11-28 01:40:31.339 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Jobs - -
+2023-11-28 01:40:31.343 +02:00 [INF] CORS policy execution successful.
+2023-11-28 01:40:31.346 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 01:40:31.357 +02:00 [INF] Route matched with {action = "GetAll", controller = "Jobs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Job]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.JobsController (CarRepairWorkshop.Api).
+2023-11-28 01:40:31.369 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 01:40:31.375 +02:00 [INF] Jobs retrieved
+2023-11-28 01:40:31.442 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CustomerId", "j"."Description", "j"."JobCategory", "j"."JobStatus", "j"."LicensePlate", "j"."Severity", "j"."VehicleModelId"
+FROM "Jobs" AS "j"
+2023-11-28 01:40:31.520 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 149.2291ms.
+2023-11-28 01:40:31.524 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Job, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 01:40:31.561 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) in 200.628ms
+2023-11-28 01:40:31.565 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 01:40:31.571 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Jobs - - - 200 - application/json;+charset=utf-8 231.4389ms
+2023-11-28 01:40:31.631 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/VehicleModels/2 - -
+2023-11-28 01:40:31.634 +02:00 [INF] CORS policy execution successful.
+2023-11-28 01:40:31.635 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api)'
+2023-11-28 01:40:31.658 +02:00 [INF] Route matched with {action = "Get", controller = "VehicleModels"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarRepairWorkshop.Contracts.Models.VehicleModel]] Get(Int32) on controller CarRepairWorkshop.Api.Controllers.VehicleModelsController (CarRepairWorkshop.Api).
+2023-11-28 01:40:31.685 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 01:40:32.022 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT "v"."Id", "v"."Make", "v"."ModelName", "v"."Year"
+FROM "VehicleModels" AS "v"
+WHERE "v"."Id" = @__p_0
+LIMIT 1
+2023-11-28 01:40:32.066 +02:00 [INF] VehicleModel retrieved. VehicleModel: {"Id":2,"ModelName":"Bmw m5","Make":"Bmw","Year":2004,"$type":"VehicleModel"}
+2023-11-28 01:40:32.076 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 388.3061ms.
+2023-11-28 01:40:32.080 +02:00 [INF] Executing OkObjectResult, writing value of type 'CarRepairWorkshop.Contracts.Models.VehicleModel'.
+2023-11-28 01:40:32.087 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api) in 424.7252ms
+2023-11-28 01:40:32.089 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api)'
+2023-11-28 01:40:32.091 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/VehicleModels/2 - - - 200 - application/json;+charset=utf-8 460.3005ms
+2023-11-28 01:41:37.560 +02:00 [INF] Application is shutting down...
+2023-11-28 02:05:02.853 +02:00 [INF] Now listening on: http://localhost:5093
+2023-11-28 02:05:02.911 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-28 02:05:02.912 +02:00 [INF] Hosting environment: Development
+2023-11-28 02:05:02.913 +02:00 [INF] Content root path: D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Api
+2023-11-28 02:05:03.400 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - -
+2023-11-28 02:05:03.629 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - - - 200 - text/html;charset=utf-8 232.6088ms
+2023-11-28 02:05:03.698 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/swagger-ui.css - -
+2023-11-28 02:05:03.722 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-11-28 02:05:03.724 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/swagger-ui.css - - - 0 144929 text/css 25.8511ms
+2023-11-28 02:05:03.868 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - -
+2023-11-28 02:05:04.168 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 300.6073ms
+2023-11-28 02:05:13.141 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Customers - -
+2023-11-28 02:05:13.146 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:05:13.150 +02:00 [WRN] Failed to determine the https port for redirect.
+2023-11-28 02:05:13.155 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:05:13.178 +02:00 [INF] Route matched with {action = "GetAll", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Customer]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 02:05:13.382 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:05:13.389 +02:00 [INF] Customers retrieved
+2023-11-28 02:05:14.518 +02:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+2023-11-28 02:05:14.638 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1245.855ms.
+2023-11-28 02:05:14.640 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Jobs - -
+2023-11-28 02:05:14.642 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:05:14.643 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:05:14.650 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Customer, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:05:14.651 +02:00 [INF] Route matched with {action = "GetAll", controller = "Jobs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Job]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.JobsController (CarRepairWorkshop.Api).
+2023-11-28 02:05:14.654 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:05:14.657 +02:00 [INF] Jobs retrieved
+2023-11-28 02:05:14.681 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) in 1492.5203ms
+2023-11-28 02:05:14.683 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:05:14.698 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Customers - - - 200 - application/json;+charset=utf-8 1558.3078ms
+2023-11-28 02:05:14.702 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CustomerId", "j"."Description", "j"."JobCategory", "j"."JobStatus", "j"."LicensePlate", "j"."Severity", "j"."VehicleModelId"
+FROM "Jobs" AS "j"
+2023-11-28 02:05:14.741 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 86.1111ms.
+2023-11-28 02:05:14.745 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Job, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:05:14.764 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/VehicleModels - -
+2023-11-28 02:05:14.765 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:05:14.766 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:05:14.768 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) in 115.6154ms
+2023-11-28 02:05:14.769 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:05:14.771 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Jobs - - - 200 - application/json;+charset=utf-8 131.2689ms
+2023-11-28 02:05:14.773 +02:00 [INF] Route matched with {action = "GetAll", controller = "VehicleModels"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.VehicleModel]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.VehicleModelsController (CarRepairWorkshop.Api).
+2023-11-28 02:05:14.777 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:05:14.781 +02:00 [INF] VehicleModels retrieved
+2023-11-28 02:05:14.819 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/VehicleModels/2 - -
+2023-11-28 02:05:14.820 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:05:14.821 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api)'
+2023-11-28 02:05:14.835 +02:00 [INF] Route matched with {action = "Get", controller = "VehicleModels"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarRepairWorkshop.Contracts.Models.VehicleModel]] Get(Int32) on controller CarRepairWorkshop.Api.Controllers.VehicleModelsController (CarRepairWorkshop.Api).
+2023-11-28 02:05:14.850 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:05:14.871 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "v"."Id", "v"."Make", "v"."ModelName", "v"."Year"
+FROM "VehicleModels" AS "v"
+2023-11-28 02:05:14.895 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 116.6174ms.
+2023-11-28 02:05:14.897 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.VehicleModel, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:05:14.902 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api) in 128.1109ms
+2023-11-28 02:05:14.904 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:05:14.905 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/VehicleModels - - - 200 - application/json;+charset=utf-8 141.0646ms
+2023-11-28 02:05:15.003 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT "v"."Id", "v"."Make", "v"."ModelName", "v"."Year"
+FROM "VehicleModels" AS "v"
+WHERE "v"."Id" = @__p_0
+LIMIT 1
+2023-11-28 02:05:15.012 +02:00 [INF] VehicleModel retrieved. VehicleModel: {"Id":2,"ModelName":"Bmw m5","Make":"Bmw","Year":2004,"$type":"VehicleModel"}
+2023-11-28 02:05:15.017 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 166.0448ms.
+2023-11-28 02:05:15.019 +02:00 [INF] Executing OkObjectResult, writing value of type 'CarRepairWorkshop.Contracts.Models.VehicleModel'.
+2023-11-28 02:05:15.020 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api) in 183.2619ms
+2023-11-28 02:05:15.021 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api)'
+2023-11-28 02:05:15.022 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/VehicleModels/2 - - - 200 - application/json;+charset=utf-8 203.3037ms
+2023-11-28 02:05:33.854 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Customers - -
+2023-11-28 02:05:33.856 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:05:33.857 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:05:33.858 +02:00 [INF] Route matched with {action = "GetAll", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Customer]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 02:05:33.861 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:05:33.862 +02:00 [INF] Customers retrieved
+2023-11-28 02:05:33.866 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+2023-11-28 02:05:33.868 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6.1163ms.
+2023-11-28 02:05:33.869 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Customer, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:05:33.871 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) in 11.1258ms
+2023-11-28 02:05:33.872 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:05:33.873 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Customers - - - 200 - application/json;+charset=utf-8 18.5479ms
+2023-11-28 02:05:35.254 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/VehicleModels - -
+2023-11-28 02:05:35.255 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:05:35.256 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:05:35.257 +02:00 [INF] Route matched with {action = "GetAll", controller = "VehicleModels"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.VehicleModel]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.VehicleModelsController (CarRepairWorkshop.Api).
+2023-11-28 02:05:35.264 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:05:35.265 +02:00 [INF] VehicleModels retrieved
+2023-11-28 02:05:35.267 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "v"."Id", "v"."Make", "v"."ModelName", "v"."Year"
+FROM "VehicleModels" AS "v"
+2023-11-28 02:05:35.270 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.8237ms.
+2023-11-28 02:05:35.271 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.VehicleModel, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:05:35.273 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api) in 13.8569ms
+2023-11-28 02:05:35.274 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:05:35.276 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/VehicleModels - - - 200 - application/json;+charset=utf-8 21.5900ms
+2023-11-28 02:05:36.773 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Customers - -
+2023-11-28 02:05:36.774 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:05:36.775 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:05:36.777 +02:00 [INF] Route matched with {action = "GetAll", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Customer]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 02:05:36.781 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:05:36.782 +02:00 [INF] Customers retrieved
+2023-11-28 02:05:36.784 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+2023-11-28 02:05:36.786 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.9301ms.
+2023-11-28 02:05:36.787 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Customer, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:05:36.788 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) in 9.303ms
+2023-11-28 02:05:36.789 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:05:36.791 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Customers - - - 200 - application/json;+charset=utf-8 17.4237ms
+2023-11-28 02:05:38.168 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/VehicleModels - -
+2023-11-28 02:05:38.169 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:05:38.170 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:05:38.171 +02:00 [INF] Route matched with {action = "GetAll", controller = "VehicleModels"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.VehicleModel]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.VehicleModelsController (CarRepairWorkshop.Api).
+2023-11-28 02:05:38.172 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:05:38.173 +02:00 [INF] VehicleModels retrieved
+2023-11-28 02:05:38.175 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "v"."Id", "v"."Make", "v"."ModelName", "v"."Year"
+FROM "VehicleModels" AS "v"
+2023-11-28 02:05:38.180 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6.2052ms.
+2023-11-28 02:05:38.181 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.VehicleModel, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:05:38.183 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api) in 10.7378ms
+2023-11-28 02:05:38.184 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:05:38.186 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/VehicleModels - - - 200 - application/json;+charset=utf-8 17.7720ms
+2023-11-28 02:05:39.390 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Customers - -
+2023-11-28 02:05:39.391 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:05:39.392 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:05:39.393 +02:00 [INF] Route matched with {action = "GetAll", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Customer]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 02:05:39.396 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:05:39.396 +02:00 [INF] Customers retrieved
+2023-11-28 02:05:39.398 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+2023-11-28 02:05:39.401 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.1302ms.
+2023-11-28 02:05:39.402 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Customer, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:05:39.403 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) in 8.2951ms
+2023-11-28 02:05:39.404 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:05:39.406 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Customers - - - 200 - application/json;+charset=utf-8 15.6586ms
+2023-11-28 02:05:44.841 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Customers - -
+2023-11-28 02:05:44.843 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:05:44.844 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:05:44.845 +02:00 [INF] Route matched with {action = "GetAll", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Customer]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 02:05:44.848 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:05:44.849 +02:00 [INF] Customers retrieved
+2023-11-28 02:05:44.866 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+2023-11-28 02:05:44.868 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 18.755ms.
+2023-11-28 02:05:44.869 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Customer, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:05:44.871 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) in 23.5885ms
+2023-11-28 02:05:44.872 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:05:44.873 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Customers - - - 200 - application/json;+charset=utf-8 31.8931ms
+2023-11-28 02:05:44.883 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/VehicleModels - -
+2023-11-28 02:05:44.884 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:05:44.885 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:05:44.886 +02:00 [INF] Route matched with {action = "GetAll", controller = "VehicleModels"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.VehicleModel]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.VehicleModelsController (CarRepairWorkshop.Api).
+2023-11-28 02:05:44.888 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:05:44.889 +02:00 [INF] VehicleModels retrieved
+2023-11-28 02:05:44.890 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "v"."Id", "v"."Make", "v"."ModelName", "v"."Year"
+FROM "VehicleModels" AS "v"
+2023-11-28 02:05:44.892 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.5396ms.
+2023-11-28 02:05:44.894 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.VehicleModel, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:05:44.896 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api) in 8.3382ms
+2023-11-28 02:05:44.897 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:05:44.898 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/VehicleModels - - - 200 - application/json;+charset=utf-8 15.0025ms
+2023-11-28 02:05:47.400 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Jobs - -
+2023-11-28 02:05:47.401 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:05:47.402 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:05:47.403 +02:00 [INF] Route matched with {action = "GetAll", controller = "Jobs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Job]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.JobsController (CarRepairWorkshop.Api).
+2023-11-28 02:05:47.405 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:05:47.406 +02:00 [INF] Jobs retrieved
+2023-11-28 02:05:47.407 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CustomerId", "j"."Description", "j"."JobCategory", "j"."JobStatus", "j"."LicensePlate", "j"."Severity", "j"."VehicleModelId"
+FROM "Jobs" AS "j"
+2023-11-28 02:05:47.410 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.2146ms.
+2023-11-28 02:05:47.413 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Job, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:05:47.414 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) in 9.6193ms
+2023-11-28 02:05:47.416 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:05:47.417 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Jobs - - - 200 - application/json;+charset=utf-8 16.6677ms
+2023-11-28 02:05:47.434 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/VehicleModels/2 - -
+2023-11-28 02:05:47.435 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:05:47.436 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api)'
+2023-11-28 02:05:47.437 +02:00 [INF] Route matched with {action = "Get", controller = "VehicleModels"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarRepairWorkshop.Contracts.Models.VehicleModel]] Get(Int32) on controller CarRepairWorkshop.Api.Controllers.VehicleModelsController (CarRepairWorkshop.Api).
+2023-11-28 02:05:47.439 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:05:47.448 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT "v"."Id", "v"."Make", "v"."ModelName", "v"."Year"
+FROM "VehicleModels" AS "v"
+WHERE "v"."Id" = @__p_0
+LIMIT 1
+2023-11-28 02:05:47.452 +02:00 [INF] VehicleModel retrieved. VehicleModel: {"Id":2,"ModelName":"Bmw m5","Make":"Bmw","Year":2004,"$type":"VehicleModel"}
+2023-11-28 02:05:47.454 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 14.2228ms.
+2023-11-28 02:05:47.456 +02:00 [INF] Executing OkObjectResult, writing value of type 'CarRepairWorkshop.Contracts.Models.VehicleModel'.
+2023-11-28 02:05:47.457 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api) in 18.5909ms
+2023-11-28 02:05:47.458 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api)'
+2023-11-28 02:05:47.459 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/VehicleModels/2 - - - 200 - application/json;+charset=utf-8 25.0280ms
+2023-11-28 02:06:03.142 +02:00 [INF] Application is shutting down...
+2023-11-28 02:06:13.068 +02:00 [INF] Now listening on: http://localhost:5093
+2023-11-28 02:06:13.116 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-28 02:06:13.117 +02:00 [INF] Hosting environment: Development
+2023-11-28 02:06:13.118 +02:00 [INF] Content root path: D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Api
+2023-11-28 02:06:13.688 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - -
+2023-11-28 02:06:14.014 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - - - 200 - text/html;charset=utf-8 329.5631ms
+2023-11-28 02:06:14.095 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/swagger-ui.css - -
+2023-11-28 02:06:14.125 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-11-28 02:06:14.127 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/swagger-ui.css - - - 0 144929 text/css 32.2023ms
+2023-11-28 02:06:14.268 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - -
+2023-11-28 02:06:14.528 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 258.9603ms
+2023-11-28 02:06:21.086 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Customers - -
+2023-11-28 02:06:21.090 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:06:21.094 +02:00 [WRN] Failed to determine the https port for redirect.
+2023-11-28 02:06:21.101 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:06:21.126 +02:00 [INF] Route matched with {action = "GetAll", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Customer]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 02:06:21.332 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:06:21.339 +02:00 [INF] Customers retrieved
+2023-11-28 02:06:22.489 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+2023-11-28 02:06:22.610 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1267.4286ms.
+2023-11-28 02:06:22.617 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Customer, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:06:22.640 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) in 1506.4797ms
+2023-11-28 02:06:22.642 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:06:22.657 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Customers - - - 200 - application/json;+charset=utf-8 1571.9420ms
+2023-11-28 02:06:22.711 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/VehicleModels - -
+2023-11-28 02:06:22.713 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:06:22.714 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:06:22.720 +02:00 [INF] Route matched with {action = "GetAll", controller = "VehicleModels"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.VehicleModel]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.VehicleModelsController (CarRepairWorkshop.Api).
+2023-11-28 02:06:22.724 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:06:22.727 +02:00 [INF] VehicleModels retrieved
+2023-11-28 02:06:22.754 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "v"."Id", "v"."Make", "v"."ModelName", "v"."Year"
+FROM "VehicleModels" AS "v"
+2023-11-28 02:06:22.774 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 49.6965ms.
+2023-11-28 02:06:22.777 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.VehicleModel, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:06:22.784 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api) in 61.5705ms
+2023-11-28 02:06:22.785 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:06:22.787 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/VehicleModels - - - 200 - application/json;+charset=utf-8 75.4920ms
+2023-11-28 02:06:23.569 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Jobs - -
+2023-11-28 02:06:23.571 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:06:23.571 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:06:23.576 +02:00 [INF] Route matched with {action = "GetAll", controller = "Jobs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Job]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.JobsController (CarRepairWorkshop.Api).
+2023-11-28 02:06:23.580 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:06:23.583 +02:00 [INF] Jobs retrieved
+2023-11-28 02:06:23.664 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CustomerId", "j"."Description", "j"."JobCategory", "j"."JobStatus", "j"."LicensePlate", "j"."Severity", "j"."VehicleModelId"
+FROM "Jobs" AS "j"
+2023-11-28 02:06:23.691 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 110.649ms.
+2023-11-28 02:06:23.694 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Job, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:06:23.710 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) in 132.1396ms
+2023-11-28 02:06:23.712 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:06:23.713 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Jobs - - - 200 - application/json;+charset=utf-8 144.1014ms
+2023-11-28 02:06:23.753 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/VehicleModels/2 - -
+2023-11-28 02:06:23.754 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:06:23.755 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api)'
+2023-11-28 02:06:23.770 +02:00 [INF] Route matched with {action = "Get", controller = "VehicleModels"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarRepairWorkshop.Contracts.Models.VehicleModel]] Get(Int32) on controller CarRepairWorkshop.Api.Controllers.VehicleModelsController (CarRepairWorkshop.Api).
+2023-11-28 02:06:23.784 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:06:23.921 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT "v"."Id", "v"."Make", "v"."ModelName", "v"."Year"
+FROM "VehicleModels" AS "v"
+WHERE "v"."Id" = @__p_0
+LIMIT 1
+2023-11-28 02:06:23.928 +02:00 [INF] VehicleModel retrieved. VehicleModel: {"Id":2,"ModelName":"Bmw m5","Make":"Bmw","Year":2004,"$type":"VehicleModel"}
+2023-11-28 02:06:23.934 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 149.8654ms.
+2023-11-28 02:06:23.936 +02:00 [INF] Executing OkObjectResult, writing value of type 'CarRepairWorkshop.Contracts.Models.VehicleModel'.
+2023-11-28 02:06:23.938 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api) in 165.7947ms
+2023-11-28 02:06:23.939 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api)'
+2023-11-28 02:06:23.940 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/VehicleModels/2 - - - 200 - application/json;+charset=utf-8 186.8043ms
+2023-11-28 02:07:29.172 +02:00 [INF] Application is shutting down...
+2023-11-28 02:07:45.556 +02:00 [INF] Now listening on: http://localhost:5093
+2023-11-28 02:07:45.605 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-28 02:07:45.606 +02:00 [INF] Hosting environment: Development
+2023-11-28 02:07:45.607 +02:00 [INF] Content root path: D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Api
+2023-11-28 02:07:46.177 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - -
+2023-11-28 02:07:46.423 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - - - 200 - text/html;charset=utf-8 250.4299ms
+2023-11-28 02:07:46.673 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - -
+2023-11-28 02:07:46.951 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 278.5684ms
+2023-11-28 02:07:52.138 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Jobs - -
+2023-11-28 02:07:52.143 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:07:52.149 +02:00 [WRN] Failed to determine the https port for redirect.
+2023-11-28 02:07:52.154 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:07:52.178 +02:00 [INF] Route matched with {action = "GetAll", controller = "Jobs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Job]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.JobsController (CarRepairWorkshop.Api).
+2023-11-28 02:07:52.373 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:07:52.380 +02:00 [INF] Jobs retrieved
+2023-11-28 02:07:53.458 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CustomerId", "j"."Description", "j"."JobCategory", "j"."JobStatus", "j"."LicensePlate", "j"."Severity", "j"."VehicleModelId"
+FROM "Jobs" AS "j"
+2023-11-28 02:07:53.591 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1208.5558ms.
+2023-11-28 02:07:53.603 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Job, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:07:53.639 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) in 1451.7228ms
+2023-11-28 02:07:53.640 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:07:53.652 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Jobs - - - 200 - application/json;+charset=utf-8 1514.6037ms
+2023-11-28 02:07:53.714 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/VehicleModels/2 - -
+2023-11-28 02:07:53.716 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:07:53.717 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api)'
+2023-11-28 02:07:53.730 +02:00 [INF] Route matched with {action = "Get", controller = "VehicleModels"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarRepairWorkshop.Contracts.Models.VehicleModel]] Get(Int32) on controller CarRepairWorkshop.Api.Controllers.VehicleModelsController (CarRepairWorkshop.Api).
+2023-11-28 02:07:53.742 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:07:53.897 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT "v"."Id", "v"."Make", "v"."ModelName", "v"."Year"
+FROM "VehicleModels" AS "v"
+WHERE "v"."Id" = @__p_0
+LIMIT 1
+2023-11-28 02:07:53.922 +02:00 [INF] VehicleModel retrieved. VehicleModel: {"Id":2,"ModelName":"Bmw m5","Make":"Bmw","Year":2004,"$type":"VehicleModel"}
+2023-11-28 02:07:53.928 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 184.8775ms.
+2023-11-28 02:07:53.931 +02:00 [INF] Executing OkObjectResult, writing value of type 'CarRepairWorkshop.Contracts.Models.VehicleModel'.
+2023-11-28 02:07:53.936 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api) in 204.5816ms
+2023-11-28 02:07:53.938 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api)'
+2023-11-28 02:07:53.940 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/VehicleModels/2 - - - 200 - application/json;+charset=utf-8 225.9633ms
+2023-11-28 02:07:57.842 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Customers - -
+2023-11-28 02:07:57.844 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:07:57.844 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:07:57.852 +02:00 [INF] Route matched with {action = "GetAll", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Customer]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 02:07:57.855 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:07:57.858 +02:00 [INF] Customers retrieved
+2023-11-28 02:07:57.952 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+2023-11-28 02:07:57.970 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 113.853ms.
+2023-11-28 02:07:57.972 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Customer, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:07:57.976 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) in 122.9802ms
+2023-11-28 02:07:57.978 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:07:57.979 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Customers - - - 200 - application/json;+charset=utf-8 137.7143ms
+2023-11-28 02:07:58.015 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/VehicleModels - -
+2023-11-28 02:07:58.016 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:07:58.017 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:07:58.021 +02:00 [INF] Route matched with {action = "GetAll", controller = "VehicleModels"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.VehicleModel]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.VehicleModelsController (CarRepairWorkshop.Api).
+2023-11-28 02:07:58.023 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:07:58.026 +02:00 [INF] VehicleModels retrieved
+2023-11-28 02:07:58.033 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "v"."Id", "v"."Make", "v"."ModelName", "v"."Year"
+FROM "VehicleModels" AS "v"
+2023-11-28 02:07:58.036 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11.4078ms.
+2023-11-28 02:07:58.037 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.VehicleModel, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:07:58.038 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api) in 16.0177ms
+2023-11-28 02:07:58.040 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:07:58.041 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/VehicleModels - - - 200 - application/json;+charset=utf-8 25.6394ms
+2023-11-28 02:07:59.195 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Jobs - -
+2023-11-28 02:07:59.197 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:07:59.199 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:07:59.200 +02:00 [INF] Route matched with {action = "GetAll", controller = "Jobs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Job]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.JobsController (CarRepairWorkshop.Api).
+2023-11-28 02:07:59.203 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:07:59.205 +02:00 [INF] Jobs retrieved
+2023-11-28 02:07:59.208 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CustomerId", "j"."Description", "j"."JobCategory", "j"."JobStatus", "j"."LicensePlate", "j"."Severity", "j"."VehicleModelId"
+FROM "Jobs" AS "j"
+2023-11-28 02:07:59.210 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.2913ms.
+2023-11-28 02:07:59.211 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Job, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:07:59.213 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) in 10.6987ms
+2023-11-28 02:07:59.214 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:07:59.216 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Jobs - - - 200 - application/json;+charset=utf-8 20.6017ms
+2023-11-28 02:07:59.223 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/VehicleModels/2 - -
+2023-11-28 02:07:59.224 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:07:59.225 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api)'
+2023-11-28 02:07:59.226 +02:00 [INF] Route matched with {action = "Get", controller = "VehicleModels"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarRepairWorkshop.Contracts.Models.VehicleModel]] Get(Int32) on controller CarRepairWorkshop.Api.Controllers.VehicleModelsController (CarRepairWorkshop.Api).
+2023-11-28 02:07:59.231 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:07:59.238 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT "v"."Id", "v"."Make", "v"."ModelName", "v"."Year"
+FROM "VehicleModels" AS "v"
+WHERE "v"."Id" = @__p_0
+LIMIT 1
+2023-11-28 02:07:59.241 +02:00 [INF] VehicleModel retrieved. VehicleModel: {"Id":2,"ModelName":"Bmw m5","Make":"Bmw","Year":2004,"$type":"VehicleModel"}
+2023-11-28 02:07:59.243 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11.0188ms.
+2023-11-28 02:07:59.245 +02:00 [INF] Executing OkObjectResult, writing value of type 'CarRepairWorkshop.Contracts.Models.VehicleModel'.
+2023-11-28 02:07:59.248 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api) in 20.8115ms
+2023-11-28 02:07:59.249 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api)'
+2023-11-28 02:07:59.250 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/VehicleModels/2 - - - 200 - application/json;+charset=utf-8 27.0738ms
+2023-11-28 02:08:00.462 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Customers - -
+2023-11-28 02:08:00.463 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:08:00.464 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:08:00.466 +02:00 [INF] Route matched with {action = "GetAll", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Customer]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 02:08:00.468 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:08:00.469 +02:00 [INF] Customers retrieved
+2023-11-28 02:08:00.472 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+2023-11-28 02:08:00.476 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7.0652ms.
+2023-11-28 02:08:00.478 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Customer, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:08:00.480 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) in 12.1663ms
+2023-11-28 02:08:00.482 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:08:00.487 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Customers - - - 200 - application/json;+charset=utf-8 24.8397ms
+2023-11-28 02:08:07.613 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Customers - -
+2023-11-28 02:08:07.614 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:08:07.615 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:08:07.617 +02:00 [INF] Route matched with {action = "GetAll", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Customer]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 02:08:07.621 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:08:07.622 +02:00 [INF] Customers retrieved
+2023-11-28 02:08:07.625 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+2023-11-28 02:08:07.627 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.7492ms.
+2023-11-28 02:08:07.629 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Customer, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:08:07.631 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) in 12.129ms
+2023-11-28 02:08:07.633 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:08:07.634 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Customers - - - 200 - application/json;+charset=utf-8 21.3865ms
+2023-11-28 02:08:09.078 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Jobs - -
+2023-11-28 02:08:09.080 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:08:09.081 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:08:09.083 +02:00 [INF] Route matched with {action = "GetAll", controller = "Jobs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Job]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.JobsController (CarRepairWorkshop.Api).
+2023-11-28 02:08:09.085 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:08:09.086 +02:00 [INF] Jobs retrieved
+2023-11-28 02:08:09.088 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CustomerId", "j"."Description", "j"."JobCategory", "j"."JobStatus", "j"."LicensePlate", "j"."Severity", "j"."VehicleModelId"
+FROM "Jobs" AS "j"
+2023-11-28 02:08:09.090 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4.0076ms.
+2023-11-28 02:08:09.092 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Job, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:08:09.093 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) in 8.8642ms
+2023-11-28 02:08:09.094 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:08:09.096 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Jobs - - - 200 - application/json;+charset=utf-8 18.1272ms
+2023-11-28 02:08:09.136 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/VehicleModels/2 - -
+2023-11-28 02:08:09.137 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:08:09.138 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api)'
+2023-11-28 02:08:09.138 +02:00 [INF] Route matched with {action = "Get", controller = "VehicleModels"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarRepairWorkshop.Contracts.Models.VehicleModel]] Get(Int32) on controller CarRepairWorkshop.Api.Controllers.VehicleModelsController (CarRepairWorkshop.Api).
+2023-11-28 02:08:09.140 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:08:09.143 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT "v"."Id", "v"."Make", "v"."ModelName", "v"."Year"
+FROM "VehicleModels" AS "v"
+WHERE "v"."Id" = @__p_0
+LIMIT 1
+2023-11-28 02:08:09.145 +02:00 [INF] VehicleModel retrieved. VehicleModel: {"Id":2,"ModelName":"Bmw m5","Make":"Bmw","Year":2004,"$type":"VehicleModel"}
+2023-11-28 02:08:09.149 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7.5234ms.
+2023-11-28 02:08:09.150 +02:00 [INF] Executing OkObjectResult, writing value of type 'CarRepairWorkshop.Contracts.Models.VehicleModel'.
+2023-11-28 02:08:09.151 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api) in 11.372ms
+2023-11-28 02:08:09.152 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api)'
+2023-11-28 02:08:09.154 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/VehicleModels/2 - - - 200 - application/json;+charset=utf-8 17.5674ms
+2023-11-28 02:08:21.978 +02:00 [INF] Application is shutting down...
+2023-11-28 02:10:12.646 +02:00 [INF] Now listening on: http://localhost:5093
+2023-11-28 02:10:12.698 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-28 02:10:12.700 +02:00 [INF] Hosting environment: Development
+2023-11-28 02:10:12.701 +02:00 [INF] Content root path: D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Api
+2023-11-28 02:10:13.244 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - -
+2023-11-28 02:10:13.551 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - - - 200 - text/html;charset=utf-8 311.6293ms
+2023-11-28 02:10:13.799 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - -
+2023-11-28 02:10:14.081 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 281.5171ms
+2023-11-28 02:10:19.179 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Customers - -
+2023-11-28 02:10:19.185 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:10:19.189 +02:00 [WRN] Failed to determine the https port for redirect.
+2023-11-28 02:10:19.194 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:10:19.219 +02:00 [INF] Route matched with {action = "GetAll", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Customer]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 02:10:19.410 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:10:19.419 +02:00 [INF] Customers retrieved
+2023-11-28 02:10:20.566 +02:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+2023-11-28 02:10:20.685 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1264.9411ms.
+2023-11-28 02:10:20.696 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Customer, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:10:20.720 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) in 1492.2377ms
+2023-11-28 02:10:20.722 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:10:20.732 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Customers - - - 200 - application/json;+charset=utf-8 1555.0706ms
+2023-11-28 02:10:21.005 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Jobs - -
+2023-11-28 02:10:21.007 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:10:21.008 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:10:21.012 +02:00 [INF] Route matched with {action = "GetAll", controller = "Jobs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Job]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.JobsController (CarRepairWorkshop.Api).
+2023-11-28 02:10:21.017 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:10:21.020 +02:00 [INF] Jobs retrieved
+2023-11-28 02:10:21.052 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CustomerId", "j"."Description", "j"."JobCategory", "j"."JobStatus", "j"."LicensePlate", "j"."Severity", "j"."VehicleModelId"
+FROM "Jobs" AS "j"
+2023-11-28 02:10:21.085 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 67.1545ms.
+2023-11-28 02:10:21.087 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Job, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:10:21.106 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) in 92.0163ms
+2023-11-28 02:10:21.107 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:10:21.109 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Jobs - - - 200 - application/json;+charset=utf-8 103.1894ms
+2023-11-28 02:10:51.368 +02:00 [INF] Application is shutting down...
+2023-11-28 02:11:00.671 +02:00 [INF] Now listening on: http://localhost:5093
+2023-11-28 02:11:00.718 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-28 02:11:00.720 +02:00 [INF] Hosting environment: Development
+2023-11-28 02:11:00.721 +02:00 [INF] Content root path: D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Api
+2023-11-28 02:11:01.219 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - -
+2023-11-28 02:11:01.495 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - - - 200 - text/html;charset=utf-8 280.8802ms
+2023-11-28 02:11:01.745 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - -
+2023-11-28 02:11:02.013 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 268.3519ms
+2023-11-28 02:11:09.025 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Jobs - -
+2023-11-28 02:11:09.030 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:11:09.036 +02:00 [WRN] Failed to determine the https port for redirect.
+2023-11-28 02:11:09.041 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:11:09.065 +02:00 [INF] Route matched with {action = "GetAll", controller = "Jobs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Job]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.JobsController (CarRepairWorkshop.Api).
+2023-11-28 02:11:09.260 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:11:09.267 +02:00 [INF] Jobs retrieved
+2023-11-28 02:11:10.361 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CustomerId", "j"."Description", "j"."JobCategory", "j"."JobStatus", "j"."LicensePlate", "j"."Severity", "j"."VehicleModelId"
+FROM "Jobs" AS "j"
+2023-11-28 02:11:10.486 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1217.1903ms.
+2023-11-28 02:11:10.496 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Job, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:11:10.532 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) in 1460.2787ms
+2023-11-28 02:11:10.534 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:11:10.549 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Jobs - - - 200 - application/json;+charset=utf-8 1525.1784ms
+2023-11-28 02:12:00.039 +02:00 [INF] Application is shutting down...
+2023-11-28 02:25:54.378 +02:00 [INF] Now listening on: http://localhost:5093
+2023-11-28 02:25:54.429 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-28 02:25:54.430 +02:00 [INF] Hosting environment: Development
+2023-11-28 02:25:54.431 +02:00 [INF] Content root path: D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Api
+2023-11-28 02:25:55.004 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - -
+2023-11-28 02:25:55.209 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - - - 200 - text/html;charset=utf-8 209.1068ms
+2023-11-28 02:25:55.477 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - -
+2023-11-28 02:25:55.724 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 246.8475ms
+2023-11-28 02:26:03.252 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Jobs - -
+2023-11-28 02:26:03.260 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:26:03.264 +02:00 [WRN] Failed to determine the https port for redirect.
+2023-11-28 02:26:03.272 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:26:03.296 +02:00 [INF] Route matched with {action = "GetAll", controller = "Jobs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Job]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.JobsController (CarRepairWorkshop.Api).
+2023-11-28 02:26:03.485 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:26:03.492 +02:00 [INF] Jobs retrieved
+2023-11-28 02:26:04.553 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CustomerId", "j"."Description", "j"."JobCategory", "j"."JobStatus", "j"."LicensePlate", "j"."Severity", "j"."VehicleModelId"
+FROM "Jobs" AS "j"
+2023-11-28 02:26:04.675 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1181.3668ms.
+2023-11-28 02:26:04.685 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Job, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 02:26:04.720 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) in 1418.5774ms
+2023-11-28 02:26:04.722 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 02:26:04.736 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Jobs - - - 200 - application/json;+charset=utf-8 1486.1090ms
+2023-11-28 02:26:04.857 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/VehicleModels/2 - -
+2023-11-28 02:26:04.859 +02:00 [INF] CORS policy execution successful.
+2023-11-28 02:26:04.860 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api)'
+2023-11-28 02:26:04.872 +02:00 [INF] Route matched with {action = "Get", controller = "VehicleModels"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarRepairWorkshop.Contracts.Models.VehicleModel]] Get(Int32) on controller CarRepairWorkshop.Api.Controllers.VehicleModelsController (CarRepairWorkshop.Api).
+2023-11-28 02:26:04.883 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 02:26:05.042 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT "v"."Id", "v"."Make", "v"."ModelName", "v"."Year"
+FROM "VehicleModels" AS "v"
+WHERE "v"."Id" = @__p_0
+LIMIT 1
+2023-11-28 02:26:05.073 +02:00 [INF] VehicleModel retrieved. VehicleModel: {"Id":2,"ModelName":"Bmw m5","Make":"Bmw","Year":2004,"$type":"VehicleModel"}
+2023-11-28 02:26:05.080 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 195.1729ms.
+2023-11-28 02:26:05.082 +02:00 [INF] Executing OkObjectResult, writing value of type 'CarRepairWorkshop.Contracts.Models.VehicleModel'.
+2023-11-28 02:26:05.087 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api) in 213.5308ms
+2023-11-28 02:26:05.089 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.VehicleModelsController.Get (CarRepairWorkshop.Api)'
+2023-11-28 02:26:05.091 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/VehicleModels/2 - - - 200 - application/json;+charset=utf-8 233.9532ms
+2023-11-28 02:35:03.044 +02:00 [INF] Application is shutting down...
+2023-11-28 02:49:41.693 +02:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-11-28 02:49:41.786 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-11-28 02:49:41.797 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-11-28 02:49:41.799 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-11-28 02:49:41.800 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-11-28 02:49:41.812 +02:00 [INF] Reverting migration '20231127222905_Initial'.
+2023-11-28 02:49:41.846 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE "Customers";
+2023-11-28 02:49:41.847 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE "Jobs";
+2023-11-28 02:49:41.847 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE "VehicleModels";
+2023-11-28 02:49:41.848 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM "__EFMigrationsHistory"
+WHERE "MigrationId" = '20231127222905_Initial';
+2023-11-28 03:02:29.108 +02:00 [INF] Now listening on: http://localhost:5093
+2023-11-28 03:02:29.225 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-28 03:02:29.228 +02:00 [INF] Hosting environment: Development
+2023-11-28 03:02:29.230 +02:00 [INF] Content root path: D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Api
+2023-11-28 03:02:29.752 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - -
+2023-11-28 03:02:30.182 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - - - 200 - text/html;charset=utf-8 436.3532ms
+2023-11-28 03:02:30.291 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/swagger-ui.css - -
+2023-11-28 03:02:30.334 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-11-28 03:02:30.338 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/swagger-ui.css - - - 0 144929 text/css 45.8501ms
+2023-11-28 03:02:30.611 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - -
+2023-11-28 03:02:31.144 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 533.3152ms
+2023-11-28 03:02:36.397 +02:00 [INF] Application is shutting down...
+2023-11-28 03:03:21.473 +02:00 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-11-28 03:03:21.542 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "name" = '__EFMigrationsHistory' AND "type" = 'table';
+2023-11-28 03:03:21.574 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2023-11-28 03:03:21.607 +02:00 [INF] Applying migration '20231128010258_Initial'.
+2023-11-28 03:03:21.677 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Customers" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Customers" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "Address" TEXT NOT NULL,
+    "EmailAddress" TEXT NOT NULL,
+    "PhoneNumber" TEXT NOT NULL
+);
+2023-11-28 03:03:21.677 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Jobs" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Jobs" PRIMARY KEY AUTOINCREMENT,
+    "CustomerId" INTEGER NOT NULL,
+    "VehicleModelName" TEXT NOT NULL,
+    "Make" TEXT NOT NULL,
+    "Year" INTEGER NOT NULL,
+    "LicensePlate" TEXT NOT NULL,
+    "Description" TEXT NULL,
+    "JobCategory" INTEGER NOT NULL,
+    "Severity" INTEGER NOT NULL,
+    "JobStatus" INTEGER NOT NULL
+);
+2023-11-28 03:03:21.678 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20231128010258_Initial', '7.0.12');
+2023-11-28 03:03:46.460 +02:00 [INF] Now listening on: http://localhost:5093
+2023-11-28 03:03:46.585 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-28 03:03:46.588 +02:00 [INF] Hosting environment: Development
+2023-11-28 03:03:46.590 +02:00 [INF] Content root path: D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Api
+2023-11-28 03:03:47.065 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - -
+2023-11-28 03:03:47.513 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - - - 200 - text/html;charset=utf-8 454.1893ms
+2023-11-28 03:03:47.958 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - -
+2023-11-28 03:03:48.627 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 668.3798ms
+2023-11-28 03:03:57.655 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Customers - -
+2023-11-28 03:03:57.664 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:03:57.673 +02:00 [WRN] Failed to determine the https port for redirect.
+2023-11-28 03:03:57.682 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:03:57.729 +02:00 [INF] Route matched with {action = "GetAll", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Customer]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 03:03:58.083 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 03:03:58.097 +02:00 [INF] Customers retrieved
+2023-11-28 03:04:00.226 +02:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+2023-11-28 03:04:00.292 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2190.9312ms.
+2023-11-28 03:04:00.311 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Customer, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 03:04:00.343 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) in 2602.2548ms
+2023-11-28 03:04:00.347 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:04:00.373 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Customers - - - 200 - application/json;+charset=utf-8 2720.0035ms
+2023-11-28 03:04:02.493 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Jobs - -
+2023-11-28 03:04:02.496 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:04:02.500 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:04:02.512 +02:00 [INF] Route matched with {action = "GetAll", controller = "Jobs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Job]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.JobsController (CarRepairWorkshop.Api).
+2023-11-28 03:04:02.521 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 03:04:02.528 +02:00 [INF] Jobs retrieved
+2023-11-28 03:04:02.592 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CustomerId", "j"."Description", "j"."JobCategory", "j"."JobStatus", "j"."LicensePlate", "j"."Make", "j"."Severity", "j"."VehicleModelName", "j"."Year"
+FROM "Jobs" AS "j"
+2023-11-28 03:04:02.597 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 74.1101ms.
+2023-11-28 03:04:02.603 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Job, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 03:04:02.634 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) in 118.9125ms
+2023-11-28 03:04:02.638 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:04:02.642 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Jobs - - - 200 - application/json;+charset=utf-8 149.4225ms
+2023-11-28 03:04:04.274 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Customers - -
+2023-11-28 03:04:04.277 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:04:04.279 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:04:04.281 +02:00 [INF] Route matched with {action = "GetAll", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Customer]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 03:04:04.288 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 03:04:04.291 +02:00 [INF] Customers retrieved
+2023-11-28 03:04:04.450 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+2023-11-28 03:04:04.456 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 165.2738ms.
+2023-11-28 03:04:04.459 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Customer, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 03:04:04.462 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) in 176.8004ms
+2023-11-28 03:04:04.465 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:04:04.469 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Customers - - - 200 - application/json;+charset=utf-8 195.0156ms
+2023-11-28 03:04:20.874 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Jobs - -
+2023-11-28 03:04:20.876 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:04:20.877 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:04:20.879 +02:00 [INF] Route matched with {action = "GetAll", controller = "Jobs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Job]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.JobsController (CarRepairWorkshop.Api).
+2023-11-28 03:04:20.884 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 03:04:20.887 +02:00 [INF] Jobs retrieved
+2023-11-28 03:04:20.891 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CustomerId", "j"."Description", "j"."JobCategory", "j"."JobStatus", "j"."LicensePlate", "j"."Make", "j"."Severity", "j"."VehicleModelName", "j"."Year"
+FROM "Jobs" AS "j"
+2023-11-28 03:04:20.895 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7.5247ms.
+2023-11-28 03:04:20.897 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Job, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 03:04:20.901 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) in 18.4126ms
+2023-11-28 03:04:20.905 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:04:20.907 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Jobs - - - 200 - application/json;+charset=utf-8 33.2803ms
+2023-11-28 03:04:45.262 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - -
+2023-11-28 03:04:45.279 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 16.8344ms
+2023-11-28 03:04:45.845 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - -
+2023-11-28 03:04:45.861 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 15.5579ms
+2023-11-28 03:04:50.931 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Jobs - -
+2023-11-28 03:04:50.934 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:04:50.937 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:04:50.940 +02:00 [INF] Route matched with {action = "GetAll", controller = "Jobs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Job]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.JobsController (CarRepairWorkshop.Api).
+2023-11-28 03:04:50.948 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 03:04:50.951 +02:00 [INF] Jobs retrieved
+2023-11-28 03:04:50.955 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CustomerId", "j"."Description", "j"."JobCategory", "j"."JobStatus", "j"."LicensePlate", "j"."Make", "j"."Severity", "j"."VehicleModelName", "j"."Year"
+FROM "Jobs" AS "j"
+2023-11-28 03:04:50.960 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.4307ms.
+2023-11-28 03:04:50.963 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Job, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 03:04:50.966 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) in 23.0426ms
+2023-11-28 03:04:50.969 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:04:50.972 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Jobs - - - 200 - application/json;+charset=utf-8 40.7573ms
+2023-11-28 03:04:54.012 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Customers - -
+2023-11-28 03:04:54.014 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:04:54.015 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:04:54.018 +02:00 [INF] Route matched with {action = "GetAll", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Customer]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 03:04:54.026 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 03:04:54.029 +02:00 [INF] Customers retrieved
+2023-11-28 03:04:54.032 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+2023-11-28 03:04:54.037 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.2144ms.
+2023-11-28 03:04:54.041 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Customer, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 03:04:54.043 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) in 21.6796ms
+2023-11-28 03:04:54.046 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:04:54.049 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Customers - - - 200 - application/json;+charset=utf-8 36.9276ms
+2023-11-28 03:04:55.847 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Jobs - -
+2023-11-28 03:04:55.848 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:04:55.850 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:04:55.853 +02:00 [INF] Route matched with {action = "GetAll", controller = "Jobs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Job]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.JobsController (CarRepairWorkshop.Api).
+2023-11-28 03:04:55.857 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 03:04:55.859 +02:00 [INF] Jobs retrieved
+2023-11-28 03:04:55.862 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CustomerId", "j"."Description", "j"."JobCategory", "j"."JobStatus", "j"."LicensePlate", "j"."Make", "j"."Severity", "j"."VehicleModelName", "j"."Year"
+FROM "Jobs" AS "j"
+2023-11-28 03:04:55.866 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7.0036ms.
+2023-11-28 03:04:55.871 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Job, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 03:04:55.873 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) in 16.4049ms
+2023-11-28 03:04:55.876 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:04:55.878 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Jobs - - - 200 - application/json;+charset=utf-8 31.8744ms
+2023-11-28 03:04:56.777 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Customers - -
+2023-11-28 03:04:56.779 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:04:56.780 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:04:56.782 +02:00 [INF] Route matched with {action = "GetAll", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Customer]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 03:04:56.787 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 03:04:56.790 +02:00 [INF] Customers retrieved
+2023-11-28 03:04:56.794 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+2023-11-28 03:04:56.798 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7.2138ms.
+2023-11-28 03:04:56.802 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Customer, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 03:04:56.805 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) in 18.6136ms
+2023-11-28 03:04:56.808 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:04:56.811 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Customers - - - 200 - application/json;+charset=utf-8 33.9842ms
+2023-11-28 03:04:59.050 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Customers - -
+2023-11-28 03:04:59.052 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:04:59.055 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:04:59.057 +02:00 [INF] Route matched with {action = "GetAll", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Customer]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 03:04:59.061 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 03:04:59.063 +02:00 [INF] Customers retrieved
+2023-11-28 03:04:59.066 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+2023-11-28 03:04:59.072 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.4703ms.
+2023-11-28 03:04:59.076 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Customer, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 03:04:59.079 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) in 19.0481ms
+2023-11-28 03:04:59.082 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:04:59.084 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Customers - - - 200 - application/json;+charset=utf-8 34.2982ms
+2023-11-28 03:05:01.294 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Jobs - -
+2023-11-28 03:05:01.296 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:05:01.298 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:05:01.300 +02:00 [INF] Route matched with {action = "GetAll", controller = "Jobs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Job]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.JobsController (CarRepairWorkshop.Api).
+2023-11-28 03:05:01.305 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 03:05:01.307 +02:00 [INF] Jobs retrieved
+2023-11-28 03:05:01.310 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CustomerId", "j"."Description", "j"."JobCategory", "j"."JobStatus", "j"."LicensePlate", "j"."Make", "j"."Severity", "j"."VehicleModelName", "j"."Year"
+FROM "Jobs" AS "j"
+2023-11-28 03:05:01.314 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 6.9512ms.
+2023-11-28 03:05:01.317 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Job, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 03:05:01.321 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) in 16.9557ms
+2023-11-28 03:05:01.323 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:05:01.326 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Jobs - - - 200 - application/json;+charset=utf-8 31.6761ms
+2023-11-28 03:05:21.303 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/Customers application/json 126
+2023-11-28 03:05:21.305 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:05:21.307 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.Add (CarRepairWorkshop.Api)'
+2023-11-28 03:05:21.335 +02:00 [INF] Route matched with {action = "Add", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(CarRepairWorkshop.Contracts.Models.Customer) on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 03:05:21.414 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.Add (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 03:05:21.733 +02:00 [INF] Executed DbCommand (11ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+WHERE "c"."Id" = @__p_0
+LIMIT 1
+2023-11-28 03:05:21.740 +02:00 [INF] Customer retrieved. Customer: null
+2023-11-28 03:05:22.284 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 6), @p1='?' (Size = 16), @p2='?' (Size = 6), @p3='?' (Size = 11)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Customers" ("Address", "EmailAddress", "Name", "PhoneNumber")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-11-28 03:05:22.412 +02:00 [INF] Customer added. Customer: {"Id":1,"Name":"string","Address":"string","EmailAddress":"user@example.com","PhoneNumber":"40766399804","$type":"Customer"}
+2023-11-28 03:05:22.428 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.Add (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkResult in 1012.2671ms.
+2023-11-28 03:05:22.441 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-11-28 03:05:22.443 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.Add (CarRepairWorkshop.Api) in 1104.2922ms
+2023-11-28 03:05:22.445 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.Add (CarRepairWorkshop.Api)'
+2023-11-28 03:05:22.447 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5093/Customers application/json 126 - 200 0 - 1144.5845ms
+2023-11-28 03:05:27.284 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/Customers application/json 127
+2023-11-28 03:05:27.286 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:05:27.288 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.Add (CarRepairWorkshop.Api)'
+2023-11-28 03:05:27.291 +02:00 [INF] Route matched with {action = "Add", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(CarRepairWorkshop.Contracts.Models.Customer) on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 03:05:27.297 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.Add (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 03:05:27.312 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+WHERE "c"."Id" = @__p_0
+LIMIT 1
+2023-11-28 03:05:27.316 +02:00 [INF] Customer retrieved. Customer: null
+2023-11-28 03:05:27.328 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 6), @p1='?' (Size = 16), @p2='?' (Size = 7), @p3='?' (Size = 11)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Customers" ("Address", "EmailAddress", "Name", "PhoneNumber")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-11-28 03:05:27.347 +02:00 [INF] Customer added. Customer: {"Id":2,"Name":"string1","Address":"string","EmailAddress":"user@example.com","PhoneNumber":"40766399804","$type":"Customer"}
+2023-11-28 03:05:27.356 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.Add (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkResult in 56.6984ms.
+2023-11-28 03:05:27.359 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-11-28 03:05:27.361 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.Add (CarRepairWorkshop.Api) in 66.6595ms
+2023-11-28 03:05:27.363 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.Add (CarRepairWorkshop.Api)'
+2023-11-28 03:05:27.365 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5093/Customers application/json 127 - 200 0 - 81.6155ms
+2023-11-28 03:05:31.048 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/Customers application/json 127
+2023-11-28 03:05:31.051 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:05:31.053 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.Add (CarRepairWorkshop.Api)'
+2023-11-28 03:05:31.055 +02:00 [INF] Route matched with {action = "Add", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(CarRepairWorkshop.Contracts.Models.Customer) on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 03:05:31.060 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.Add (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 03:05:31.066 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+WHERE "c"."Id" = @__p_0
+LIMIT 1
+2023-11-28 03:05:31.072 +02:00 [INF] Customer retrieved. Customer: null
+2023-11-28 03:05:31.076 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 6), @p1='?' (Size = 16), @p2='?' (Size = 7), @p3='?' (Size = 11)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Customers" ("Address", "EmailAddress", "Name", "PhoneNumber")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-11-28 03:05:31.093 +02:00 [INF] Customer added. Customer: {"Id":3,"Name":"string2","Address":"string","EmailAddress":"user@example.com","PhoneNumber":"40766399804","$type":"Customer"}
+2023-11-28 03:05:31.100 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.Add (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkResult in 37.6172ms.
+2023-11-28 03:05:31.105 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-11-28 03:05:31.108 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.Add (CarRepairWorkshop.Api) in 48.9494ms
+2023-11-28 03:05:31.110 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.Add (CarRepairWorkshop.Api)'
+2023-11-28 03:05:31.113 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5093/Customers application/json 127 - 200 0 - 64.0546ms
+2023-11-28 03:05:34.483 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/Customers application/json 127
+2023-11-28 03:05:34.485 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:05:34.490 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.Add (CarRepairWorkshop.Api)'
+2023-11-28 03:05:34.493 +02:00 [INF] Route matched with {action = "Add", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(CarRepairWorkshop.Contracts.Models.Customer) on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 03:05:34.499 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.Add (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 03:05:34.506 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+WHERE "c"."Id" = @__p_0
+LIMIT 1
+2023-11-28 03:05:34.511 +02:00 [INF] Customer retrieved. Customer: null
+2023-11-28 03:05:34.515 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 6), @p1='?' (Size = 16), @p2='?' (Size = 7), @p3='?' (Size = 11)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Customers" ("Address", "EmailAddress", "Name", "PhoneNumber")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2023-11-28 03:05:34.533 +02:00 [INF] Customer added. Customer: {"Id":4,"Name":"string3","Address":"string","EmailAddress":"user@example.com","PhoneNumber":"40766399804","$type":"Customer"}
+2023-11-28 03:05:34.542 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.Add (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkResult in 39.8508ms.
+2023-11-28 03:05:34.545 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-11-28 03:05:34.547 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.Add (CarRepairWorkshop.Api) in 49.5718ms
+2023-11-28 03:05:34.550 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.Add (CarRepairWorkshop.Api)'
+2023-11-28 03:05:34.552 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5093/Customers application/json 127 - 200 0 - 70.0022ms
+2023-11-28 03:05:40.259 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Customers - -
+2023-11-28 03:05:40.261 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:05:40.262 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:05:40.265 +02:00 [INF] Route matched with {action = "GetAll", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Customer]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 03:05:40.269 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 03:05:40.271 +02:00 [INF] Customers retrieved
+2023-11-28 03:05:40.275 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+2023-11-28 03:05:40.293 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 21.6681ms.
+2023-11-28 03:05:40.297 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Customer, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 03:05:40.305 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) in 37.4805ms
+2023-11-28 03:05:40.308 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:05:40.310 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Customers - - - 200 - application/json;+charset=utf-8 51.1079ms
+2023-11-28 03:05:44.383 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Customers/1 - -
+2023-11-28 03:05:44.385 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:05:44.388 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.Get (CarRepairWorkshop.Api)'
+2023-11-28 03:05:44.397 +02:00 [INF] Route matched with {action = "Get", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarRepairWorkshop.Contracts.Models.Customer]] Get(Int32) on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 03:05:44.403 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.Get (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 03:05:44.411 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+WHERE "c"."Id" = @__p_0
+LIMIT 1
+2023-11-28 03:05:44.415 +02:00 [INF] Customer retrieved. Customer: {"Id":1,"Name":"string","Address":"string","EmailAddress":"user@example.com","PhoneNumber":"40766399804","$type":"Customer"}
+2023-11-28 03:05:44.423 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.Get (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 17.7685ms.
+2023-11-28 03:05:44.426 +02:00 [INF] Executing OkObjectResult, writing value of type 'CarRepairWorkshop.Contracts.Models.Customer'.
+2023-11-28 03:05:44.428 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.Get (CarRepairWorkshop.Api) in 27.6185ms
+2023-11-28 03:05:44.432 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.Get (CarRepairWorkshop.Api)'
+2023-11-28 03:05:44.434 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Customers/1 - - - 200 - application/json;+charset=utf-8 50.6153ms
+2023-11-28 03:05:53.031 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Jobs - -
+2023-11-28 03:05:53.034 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:05:53.035 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:05:53.038 +02:00 [INF] Route matched with {action = "GetAll", controller = "Jobs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Job]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.JobsController (CarRepairWorkshop.Api).
+2023-11-28 03:05:53.043 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 03:05:53.045 +02:00 [INF] Jobs retrieved
+2023-11-28 03:05:53.050 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CustomerId", "j"."Description", "j"."JobCategory", "j"."JobStatus", "j"."LicensePlate", "j"."Make", "j"."Severity", "j"."VehicleModelName", "j"."Year"
+FROM "Jobs" AS "j"
+2023-11-28 03:05:53.056 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10.411ms.
+2023-11-28 03:05:53.059 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Job, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 03:05:53.062 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) in 19.8569ms
+2023-11-28 03:05:53.065 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:05:53.068 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Jobs - - - 200 - application/json;+charset=utf-8 36.5935ms
+2023-11-28 03:05:54.795 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Customers - -
+2023-11-28 03:05:54.797 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:05:54.799 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:05:54.801 +02:00 [INF] Route matched with {action = "GetAll", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Customer]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 03:05:54.806 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 03:05:54.808 +02:00 [INF] Customers retrieved
+2023-11-28 03:05:54.811 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+2023-11-28 03:05:54.816 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7.8495ms.
+2023-11-28 03:05:54.820 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Customer, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 03:05:54.824 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) in 19.1557ms
+2023-11-28 03:05:54.827 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:05:54.830 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Customers - - - 200 - application/json;+charset=utf-8 35.8975ms
+2023-11-28 03:06:39.609 +02:00 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5093/Jobs - -
+2023-11-28 03:06:39.610 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:06:39.613 +02:00 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5093/Jobs - - - 204 - - 4.9158ms
+2023-11-28 03:06:39.621 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5093/Jobs application/json;+charset=utf-8 208
+2023-11-28 03:06:39.623 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:06:39.624 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.Add (CarRepairWorkshop.Api)'
+2023-11-28 03:06:39.635 +02:00 [INF] Route matched with {action = "Add", controller = "Jobs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Add(CarRepairWorkshop.Contracts.Models.Job) on controller CarRepairWorkshop.Api.Controllers.JobsController (CarRepairWorkshop.Api).
+2023-11-28 03:06:39.680 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.JobsController.Add (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 03:06:39.700 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CustomerId", "j"."Description", "j"."JobCategory", "j"."JobStatus", "j"."LicensePlate", "j"."Make", "j"."Severity", "j"."VehicleModelName", "j"."Year"
+FROM "Jobs" AS "j"
+WHERE "j"."Id" = @__p_0
+LIMIT 1
+2023-11-28 03:06:39.705 +02:00 [INF] Job retrieved. Job: null
+2023-11-28 03:06:39.842 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int64), @p1='?' (Size = 15), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (Size = 7), @p5='?' (Size = 5), @p6='?' (DbType = Int32), @p7='?' (Size = 11), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Jobs" ("CustomerId", "Description", "JobCategory", "JobStatus", "LicensePlate", "Make", "Severity", "VehicleModelName", "Year")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8)
+RETURNING "Id";
+2023-11-28 03:06:39.867 +02:00 [INF] Job added. Job: {"Id":1,"CustomerId":4,"VehicleModelName":"Dacia Logan","Make":"Dacia","Year":2004,"LicensePlate":"ASD-123","Description":"Törött szélvédő","JobCategory":"Body","Severity":5,"JobStatus":"Scheduled","$type":"Job"}
+2023-11-28 03:06:39.879 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.JobsController.Add (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkResult in 196.5754ms.
+2023-11-28 03:06:39.882 +02:00 [INF] Executing StatusCodeResult, setting HTTP status code 200
+2023-11-28 03:06:39.883 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.JobsController.Add (CarRepairWorkshop.Api) in 244.3085ms
+2023-11-28 03:06:39.886 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.Add (CarRepairWorkshop.Api)'
+2023-11-28 03:06:39.888 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5093/Jobs application/json;+charset=utf-8 208 - 200 0 - 267.1814ms
+2023-11-28 03:06:39.947 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Jobs - -
+2023-11-28 03:06:39.948 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:06:39.950 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:06:39.952 +02:00 [INF] Route matched with {action = "GetAll", controller = "Jobs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Job]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.JobsController (CarRepairWorkshop.Api).
+2023-11-28 03:06:39.957 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 03:06:39.959 +02:00 [INF] Jobs retrieved
+2023-11-28 03:06:39.962 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CustomerId", "j"."Description", "j"."JobCategory", "j"."JobStatus", "j"."LicensePlate", "j"."Make", "j"."Severity", "j"."VehicleModelName", "j"."Year"
+FROM "Jobs" AS "j"
+2023-11-28 03:06:39.968 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.3133ms.
+2023-11-28 03:06:39.972 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Job, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 03:06:39.984 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) in 27.3224ms
+2023-11-28 03:06:39.988 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:06:39.991 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Jobs - - - 200 - application/json;+charset=utf-8 44.0988ms
+2023-11-28 03:07:44.371 +02:00 [INF] Application is shutting down...
+2023-11-28 03:10:42.012 +02:00 [INF] Now listening on: http://localhost:5093
+2023-11-28 03:10:42.142 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-28 03:10:42.144 +02:00 [INF] Hosting environment: Development
+2023-11-28 03:10:42.146 +02:00 [INF] Content root path: D:\Personal\Egyetem\Felevek es vizsgak\Kötelezően választott tárgyak\NI_CSharp\beadando\CarRepairWorkshop\CarRepairWorkshop.Api
+2023-11-28 03:10:42.524 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/index.html - -
+2023-11-28 03:10:42.959 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/index.html - - - 200 - text/html;charset=utf-8 438.6639ms
+2023-11-28 03:10:43.057 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/swagger-ui.css - -
+2023-11-28 03:10:43.103 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-11-28 03:10:43.106 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/swagger-ui.css - - - 0 144929 text/css 48.4459ms
+2023-11-28 03:10:43.397 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - -
+2023-11-28 03:10:44.032 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 635.1539ms
+2023-11-28 03:10:58.435 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Jobs - -
+2023-11-28 03:10:58.443 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:10:58.451 +02:00 [WRN] Failed to determine the https port for redirect.
+2023-11-28 03:10:58.463 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:10:58.520 +02:00 [INF] Route matched with {action = "GetAll", controller = "Jobs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Job]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.JobsController (CarRepairWorkshop.Api).
+2023-11-28 03:10:58.906 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 03:10:58.921 +02:00 [INF] Jobs retrieved
+2023-11-28 03:11:01.100 +02:00 [INF] Executed DbCommand (37ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CustomerId", "j"."Description", "j"."JobCategory", "j"."JobStatus", "j"."LicensePlate", "j"."Make", "j"."Severity", "j"."VehicleModelName", "j"."Year"
+FROM "Jobs" AS "j"
+2023-11-28 03:11:01.374 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2449.0829ms.
+2023-11-28 03:11:01.388 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Job, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 03:11:01.456 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) in 2922.4807ms
+2023-11-28 03:11:01.459 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:11:01.482 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Jobs - - - 200 - application/json;+charset=utf-8 3049.6171ms
+2023-11-28 03:11:30.690 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Jobs - -
+2023-11-28 03:11:30.693 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:11:30.695 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:11:30.705 +02:00 [INF] Route matched with {action = "GetAll", controller = "Jobs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Job]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.JobsController (CarRepairWorkshop.Api).
+2023-11-28 03:11:30.712 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 03:11:30.715 +02:00 [INF] Jobs retrieved
+2023-11-28 03:11:30.766 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CustomerId", "j"."Description", "j"."JobCategory", "j"."JobStatus", "j"."LicensePlate", "j"."Make", "j"."Severity", "j"."VehicleModelName", "j"."Year"
+FROM "Jobs" AS "j"
+2023-11-28 03:11:30.776 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 61.513ms.
+2023-11-28 03:11:30.780 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Job, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 03:11:30.789 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api) in 80.4457ms
+2023-11-28 03:11:30.792 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:11:30.797 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Jobs - - - 200 - application/json;+charset=utf-8 107.1724ms
+2023-11-28 03:12:08.910 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Jobs/1 - -
+2023-11-28 03:12:08.915 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:12:08.917 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.Get (CarRepairWorkshop.Api)'
+2023-11-28 03:12:08.942 +02:00 [INF] Route matched with {action = "Get", controller = "Jobs"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CarRepairWorkshop.Contracts.Models.Job]] Get(Int32) on controller CarRepairWorkshop.Api.Controllers.JobsController (CarRepairWorkshop.Api).
+2023-11-28 03:12:08.987 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.JobsController.Get (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 03:12:09.385 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[@__p_0='?' (DbType = Int64)], CommandType='"Text"', CommandTimeout='30']
+SELECT "j"."Id", "j"."CustomerId", "j"."Description", "j"."JobCategory", "j"."JobStatus", "j"."LicensePlate", "j"."Make", "j"."Severity", "j"."VehicleModelName", "j"."Year"
+FROM "Jobs" AS "j"
+WHERE "j"."Id" = @__p_0
+LIMIT 1
+2023-11-28 03:12:09.400 +02:00 [INF] Job retrieved. Job: {"Id":1,"CustomerId":4,"VehicleModelName":"Dacia Logan","Make":"Dacia","Year":2004,"LicensePlate":"ASD-123","Description":"Törött szélvédő","JobCategory":"Body","Severity":5,"JobStatus":"Scheduled","$type":"Job"}
+2023-11-28 03:12:09.418 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.JobsController.Get (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 429.2201ms.
+2023-11-28 03:12:09.421 +02:00 [INF] Executing OkObjectResult, writing value of type 'CarRepairWorkshop.Contracts.Models.Job'.
+2023-11-28 03:12:09.424 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.JobsController.Get (CarRepairWorkshop.Api) in 476.6969ms
+2023-11-28 03:12:09.426 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.JobsController.Get (CarRepairWorkshop.Api)'
+2023-11-28 03:12:09.430 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Jobs/1 - - - 200 - application/json;+charset=utf-8 519.4132ms
+2023-11-28 03:12:09.450 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5093/Customers - -
+2023-11-28 03:12:09.452 +02:00 [INF] CORS policy execution successful.
+2023-11-28 03:12:09.454 +02:00 [INF] Executing endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:12:09.462 +02:00 [INF] Route matched with {action = "GetAll", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[CarRepairWorkshop.Contracts.Models.Customer]]] GetAll() on controller CarRepairWorkshop.Api.Controllers.CustomersController (CarRepairWorkshop.Api).
+2023-11-28 03:12:09.467 +02:00 [INF] Executing action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) - Validation state: "Valid"
+2023-11-28 03:12:09.475 +02:00 [INF] Customers retrieved
+2023-11-28 03:12:09.489 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "c"."Id", "c"."Address", "c"."EmailAddress", "c"."Name", "c"."PhoneNumber"
+FROM "Customers" AS "c"
+2023-11-28 03:12:09.526 +02:00 [INF] Executed action method CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 56.6828ms.
+2023-11-28 03:12:09.530 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[CarRepairWorkshop.Contracts.Models.Customer, CarRepairWorkshop.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-28 03:12:09.537 +02:00 [INF] Executed action CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api) in 71.6494ms
+2023-11-28 03:12:09.540 +02:00 [INF] Executed endpoint 'CarRepairWorkshop.Api.Controllers.CustomersController.GetAll (CarRepairWorkshop.Api)'
+2023-11-28 03:12:09.543 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5093/Customers - - - 200 - application/json;+charset=utf-8 92.6724ms
+2023-11-28 03:13:23.158 +02:00 [INF] Application is shutting down...

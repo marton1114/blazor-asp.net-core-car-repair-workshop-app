@@ -33,7 +33,9 @@ namespace CarRepairWorkshop.Api.Migrations
                     Id = table.Column<long>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     CustomerId = table.Column<long>(type: "INTEGER", nullable: false),
-                    VehicleModelId = table.Column<long>(type: "INTEGER", nullable: false),
+                    VehicleModelName = table.Column<string>(type: "TEXT", nullable: false),
+                    Make = table.Column<string>(type: "TEXT", nullable: false),
+                    Year = table.Column<int>(type: "INTEGER", nullable: false),
                     LicensePlate = table.Column<string>(type: "TEXT", nullable: false),
                     Description = table.Column<string>(type: "TEXT", maxLength: 150, nullable: true),
                     JobCategory = table.Column<int>(type: "INTEGER", nullable: false),
@@ -43,21 +45,6 @@ namespace CarRepairWorkshop.Api.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Jobs", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "VehicleModels",
-                columns: table => new
-                {
-                    Id = table.Column<long>(type: "INTEGER", nullable: false)
-                        .Annotation("Sqlite:Autoincrement", true),
-                    ModelName = table.Column<string>(type: "TEXT", nullable: false),
-                    Make = table.Column<string>(type: "TEXT", nullable: false),
-                    Year = table.Column<int>(type: "INTEGER", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_VehicleModels", x => x.Id);
                 });
         }
 
@@ -69,9 +56,6 @@ namespace CarRepairWorkshop.Api.Migrations
 
             migrationBuilder.DropTable(
                 name: "Jobs");
-
-            migrationBuilder.DropTable(
-                name: "VehicleModels");
         }
     }
 }

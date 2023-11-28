@@ -23,7 +23,6 @@ builder.Services.AddDbContext<CarRepairWorkshopContext>(options =>
 
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IJobService, JobService>();
-builder.Services.AddScoped<IVehicleModelService, VehicleModelService>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

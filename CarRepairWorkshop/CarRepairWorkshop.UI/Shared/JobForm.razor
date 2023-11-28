@@ -1,5 +1,4 @@
 @inject ICustomerService CustomerService
-@inject IVehicleModelService VehicleModelService
 @inject IJobService JobService
 
 <EditForm Model="Job" OnValidSubmit="OnValidSubmit">
@@ -19,16 +18,19 @@
         </InputSelect>
     </div>
     <div class="mb-3">
-        <label class="form-label">Vehicle Model</label>
-        <InputSelect @bind-Value="Job.VehicleModelId" class="form-select">
-            @if (vehicleModels is not null)
-            {
-                foreach (var vehicleModel in vehicleModels)
-                {
-                    <option value="@vehicleModel.Id">@vehicleModel.ModelName</option>
-                }
-            }
-        </InputSelect>
+        <label class="form-label">Vehicle Model Name</label>
+        <InputText @bind-Value="Job.VehicleModelName" class="form-control"/>
+        <ValidationMessage For="() => Job.VehicleModelName" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Vehicle Make</label>
+        <InputText @bind-Value="Job.Make" class="form-control"/>
+        <ValidationMessage For="() => Job.Make" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Manufacturing Year</label>
+        <InputNumber @bind-Value="Job.Year" class="form-control"/>
+        <ValidationMessage For="() => Job.Year" />
     </div>
     <div class="mb-3">
         <label class="form-label">License Plate</label>
@@ -71,12 +73,10 @@
     public Func<Task> OnValidSubmit { get; set; }
 
     IEnumerable<Customer>? customers { get; set; }
-    IEnumerable<VehicleModel>? vehicleModels { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
         customers = await CustomerService.GetCustomersAsync();
-        vehicleModels = await VehicleModelService.GetVehicleModelsAsync();
 
         Job.JobStatus = JobStatus.Scheduled;
     }

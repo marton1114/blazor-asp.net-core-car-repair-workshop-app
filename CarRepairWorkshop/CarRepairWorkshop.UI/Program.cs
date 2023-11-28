@@ -12,7 +12,6 @@ builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("http://
 
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IJobService, JobService>();
-builder.Services.AddScoped<IVehicleModelService, VehicleModelService>();
 
 builder.Services.AddSyncfusionBlazor();
 
